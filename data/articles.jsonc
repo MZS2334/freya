@@ -1,0 +1,1024 @@
+/*
+ * ============================================================================
+ *  FREYA PSİKOLOJİ — MAKALELER VERİ DOSYASI
+ * ============================================================================
+ *
+ *  Bu dosya web sitesindeki tum makaleleri icerir.
+ *  Yeni makale eklemek icin asagidaki adimlari izleyin.
+ *
+ *  --------------------------------------------------------------------------
+ *  NASIL YENİ MAKALE EKLENİR?
+ *  --------------------------------------------------------------------------
+ *
+ *  1. Bu dosyayi bir metin duzenleyicide acin (Notepad, VS Code, vb.)
+ *
+ *  2. En son makalenin kapanis parantezinden sonra ( } ) virgul koyun
+ *     ve yeni bir makale blogu ekleyin.
+ *
+ *  3. Her makale su alanlari icermelidir:
+ *
+ *     "slug":        Makalenin URL adresi. Turkce karakter ve bosluk
+ *                    OLMADAN, tire (-) ile kelimeleri ayirin.
+ *                    Ornek: "benim-yeni-makalem"
+ *
+ *     "title":       Makalenin basligi. Turkce karakter kullanabilirsiniz.
+ *                    Ornek: "Cocuklarda Ofke Nobetleri"
+ *
+ *     "category":    Makalenin kategorisi. SADECE su iki degerden biri:
+ *                    "makaleler"      -> Makaleler sayfasinda gorunur
+ *                    "freyada-dogum"  -> Freya'da Dogum sayfasinda gorunur
+ *
+ *     "excerpt":     Makalenin kisa ozeti (listelerde gorunur).
+ *                    1-2 cumle yazin.
+ *
+ *     "date":        Yayin tarihi. Ornek: "15 Eylul 2024"
+ *
+ *     "readTime":    Tahmini okuma suresi (dakika cinsinden, sadece sayi).
+ *                    Ornek: 5
+ *
+ *     "theme":       Makale kartinin arka plan rengi. Sunlardan biri:
+ *                    "teal"   -> Koyu indigo
+ *                    "terra"  -> Altin/sari
+ *                    "sand"   -> Krem/bej
+ *                    "rose"   -> Pembe/seftali
+ *                    "deep"   -> En koyu indigo
+ *                    "night"  -> Koyu mor
+ *
+ *     "variant":     Kart gorselinin varyanti (0 ile 4 arasi bir sayi).
+ *                    0, 1, 2, 3 veya 4 yazin.
+ *
+ *     "content":     Makalenin icerigi. Paragraflardan olusan bir listedir.
+ *                    Her paragraf su tiplerden biri olabilir:
+ *
+ *                    { "t": "p",     "text": "Paragraf metni..." }
+ *                      -> Normal paragraf
+ *
+ *                    { "t": "h2",    "text": "Baslik metni..." }
+ *                      -> Buyuk baslik
+ *
+ *                    { "t": "h3",    "text": "Alt baslik metni..." }
+ *                      -> Orta baslik
+ *
+ *                    { "t": "quote", "text": "Alinti metni..." }
+ *                      -> Alinti kutusu (ozel stil ile gorunur)
+ *
+ *                    { "t": "ul",    "items": ["Madde 1", "Madde 2", ...] }
+ *                      -> Noktali liste
+ *
+ *                    { "t": "ol",    "items": ["Madde 1", "Madde 2", ...] }
+ *                      -> Numarali liste
+ *
+ *  --------------------------------------------------------------------------
+ *  ÖRNEK YENİ MAKALE:
+ *  --------------------------------------------------------------------------
+ *
+ *  {
+ *    "slug": "yeni-makalem",
+ *    "title": "Yeni Makalem",
+ *    "category": "makaleler",
+ *    "excerpt": "Bu makale kisaca sundan bahsediyor...",
+ *    "date": "15 Eylul 2024",
+ *    "readTime": 3,
+ *    "theme": "teal",
+ *    "variant": 0,
+ *    "content": [
+ *      { "t": "p", "text": "Ilk paragrafiniz buraya..." },
+ *      { "t": "h2", "text": "Bir Baslik" },
+ *      { "t": "p", "text": "Ikinci paragrafiniz buraya..." },
+ *      { "t": "ul", "items": ["Madde 1", "Madde 2"] },
+ *      { "t": "quote", "text": "Onemli bir alinti..." }
+ *    ]
+ *  }
+ *
+ *  --------------------------------------------------------------------------
+ *  DİKKAT EDİLECEKLER:
+ *  --------------------------------------------------------------------------
+ *
+ *  - Her alan cift tirnak ("") icinde olmalidir (sayilar haric).
+ *  - Metin icinde cift tirnak kullanacaksaniz \" seklinde yazin.
+ *  - Virgulleri unutmayin! Her makaleden sonra virgul (,) koyun.
+ *    Son makaleden sonra virgul KOYMAYIN.
+ *  - content icindeki her bloktan sonra da virgul koyun.
+ *    Son bloktan sonra virgul KOYMAYIN.
+ *  - Dosyayi kaydettikten sonra web sitesi otomatik guncellenir.
+ *
+ * ============================================================================
+ */
+
+[
+  {
+    "slug": "terapi-ya-da-sifa",
+    "title": "Terapi? Ya da Şifa?",
+    "category": "makaleler",
+    "excerpt": "Terapi nedir? Değişim, dönüşüm, yenilenmek? Yıkılmak, derinleşmek, fark etmek? Belki hepsi belki hiçbiri.. Değişmektir belki de terapi, yenilenmek, şifa bulmaktır.",
+    "date": "7 Şubat 2021",
+    "readTime": 3,
+    "theme": "teal",
+    "variant": 0,
+    "content": [
+      {
+        "t": "p",
+        "text": "Terapi nedir? Değişim, dönüşüm, yenilenmek? Yıkılmak, derinleşmek, fark etmek? Belki hepsi belki hiçbiri.."
+      },
+      {
+        "t": "p",
+        "text": "Değişmektir belki de terapi, yenilenmek, şifa bulmaktır. İyi de nasıl yenileneceğiz yıkılmadan? Terapi yıkılmaktır aynı zamanda. Farkına vararak yıkılmak, yıllarca öyle ya da böyle inşaa ettiğiniz yapının yavaş yavaş tüm katlarının yıkılmasıdır. Yıkmak gerekli midir? Yıkmadan yenilenemez mi? Belki dışı ya da içini yıkmadan nasıl yenileyeceğiz?"
+      },
+      {
+        "t": "p",
+        "text": "Korkma diyor uzaktaki bir ses, korkma, yıkılacaksın ama güvende olacak temellerin, kontrolsüz değil hiçbir şey, hızlı gidersen tutacak seni bir el.. Korkma! Güvendesin, öyle bir güvendesin ki burada yargılanmak yok, eleştirilmek yok. Hatta sana daha önce hiç deneyimlemediğin yeni bir tattan da bahsedeyim. Burada sadece sen olduğun için sevileceksin, kabul görüleceksin! Ve bir yerde bunun keyfine öyle bir varacaksın ki sen yıkacaksın ellerinle her bir katı, tane tane bazen hızlı bazen yavaş, bazen gözyaşlarıyla bazen kahkaha atarak! Sen de gönüllü olacaksın bu değişime yenilenmeye."
+      },
+      {
+        "t": "p",
+        "text": "Şifalanacaksın ve sakın bunun tek taraflı olduğunu düşünme, şifa vereceksin aynı zamanda. Senin yenilenmen umut verecek, güç verecek karşındakine ve o senden aldığı gücü başkasına iletecek. Sen sanacaksın ki sadece ben yaşadım. Hayır! Sen upuzun bir şifa zincirinin ilk halkası olacaksın."
+      },
+      {
+        "t": "p",
+        "text": "Yenilenecek, ağlayacak, dönüşecek ve dönüştüreceksin.."
+      }
+    ]
+  },
+  {
+    "slug": "cocuklari-nasil-daha-iyi-anlariz",
+    "title": "Çocukları Nasıl Daha İyi Anlarız?",
+    "category": "makaleler",
+    "excerpt": "Ebeveynlerin ortak söylemi “çocuğum bana hiçbir şey söylemiyor, okulda ne yaşadığını arkadaşlarından duyuyorum”. Peki çocuklar neden ebeveynlerine yaşadıkları en sıradan olayları bile anlatmıyorlar?",
+    "date": "14 Şubat 2021",
+    "readTime": 4,
+    "theme": "terra",
+    "variant": 1,
+    "content": [
+      {
+        "t": "p",
+        "text": "Ebeveynlerin ortak söylemi “çocuğum bana hiçbir şey söylemiyor, okulda ne yaşadığını arkadaşlarından duyuyorum”. Peki çocuklar neden ebeveynlerine yaşadıkları en sıradan olayları bile anlatmıyorlar?"
+      },
+      {
+        "t": "p",
+        "text": "Konu çocuk olduğunda bizler hep kendi açımızdan bakarız olaylara. Peki şöyle yapalım, kendinizi düşünün bir yetişkin olarak. Siz yaşadıklarınızı kiminle paylaşıyorsunuz? En sıradan, en basit olayları bile birine anlatırken temel kriterleriniz neler? Anlaşılmak, yargılanmamak, güvende hissetmek, destek bulmak… Biz yetişkinler bunları arıyoruz paylaşım yaparken. Peki çocuklarımıza bunları sağlıyor muyuz? Bir yetişkin olarak her şeyi bildiğimizi düşünüp onlara sadece nasihat mi veriyoruz ya da başka şeylerle mi ilgileniyoruz? Tüm bunlar olurken çocukların gelip bize deneyimlerini anlatmaları mümkün değildir. Anlaşılmadığını hisseden çocuk diline ket vurur."
+      },
+      {
+        "t": "h3",
+        "text": "Peki ya nasıl dinleyebiliriz çocukları?"
+      },
+      {
+        "t": "ol",
+        "items": [
+          "Öncelikle tüm uyaranlardan uzaklaşarak. “Şu anda sadece sen ve ben varım. Diğer şeyler umurumda değil. Sadece senin için buradayım. Seni dinlemek ve anlamak için.” Mesajını vermek gerekir.",
+          "Bedeni okumak. Anneler-babalar bilirler ki her duygu çocukta başka bedensel tepki yaratır. Kiminin heyecanlanınca yanakları kızarır, kiminin sinirlenince hareket hızı artar, kimi üzülünce içe kapanır. Bu dolaylı mesajları iyi gözlemlemek ve yansıtmak gerekir. Hiçbir telkinde bulunmadan, uzun uzun soru sormadan sadece ve sadece onu iyi gözlemek ve anladığınızı hissettirerek geri bildirim vermek. “Yanakların kızarmış, sanırım bugün canını sıkan bir şey oldu. Çok hareketlendiğini görüyorum, seni birileri kızdırmış olmalı. Elindeki resim çok renkli görünüyor, galiba bugün okulda boyama etkinliği yaptınız.” Duyguları yansıtmak hem çocuğa anlaşıldığının mesajını verirken hem de onun uzun uzun anlatmasını sağlar.",
+          "Çocuklar iyi gözlemcilerdir. Ben şimdi bunu anlatırsam bana kızar mı? Benim yanımda olur mu? Beni cezalandırır mı? Diye sürekli ebeveynleri gözlemlerler. Ebeveynin davranışları eğer güven vermiyorsa, çocuk yaşadığı şeyi annesine-babasına anlatamaz."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "obezite-sadece-durmadan-yemek-midir",
+    "title": "Obezite, Sadece Durmadan Yemek Midir?",
+    "category": "makaleler",
+    "excerpt": "Günümüzde obezite yaygın bir sağlık sorunu olarak görülmektedir. Obezite vücut yağ oranının artışı olarak tanımlanmakta ve en yaygın haliyle beden kitle indeksi ile değerlendirilmektedir.",
+    "date": "21 Şubat 2021",
+    "readTime": 9,
+    "theme": "night",
+    "variant": 2,
+    "content": [
+      {
+        "t": "p",
+        "text": "Günümüzde obezite yaygın bir sağlık sorunu olarak görülmektedir. Obezite vücut yağ oranının artışı olarak tanımlanmakta ve en yaygın haliyle beden kitle indeksinin (BKİ) hesaplanması (BKİ=kilo(kg) / boy(m²)) ile değerlendirilmektedir. Beden kitle indeksinin 18,5-25 kg/m² arasında olması sağlıklı kilo anlamına gelirken, BKİ’nin 25-30 kg/m² olması olası artmış risk, BKİ’nın 30 kg/m² ve üstü olması obezite anlamına gelmektedir."
+      },
+      {
+        "t": "p",
+        "text": "Dünya Sağlık Örgütü verilerine göre, dünyada 1 milyardan fazla kilolu insan bulunuyor. Türkiye’de ise kadın nüfusunun yaklaşık üçte biri, erkek nüfusunun da yaklaşık beşte biri obez. Son verilere göre ülkemizde obezite yaygınlığı 30 yaş üzeri erkeklerde %21, kadınlarda ise %43."
+      },
+      {
+        "t": "p",
+        "text": "Obezite tedavisinde pek çok yöntem kullanılmasına rağmen obezite yaygınlığı gün geçtikçe artmakta. Bu durum bize tedavi sürecinde sadece fiziksel belirtilere odaklanmanın yetersiz kaldığını ve kişiyi sürekli yemeğe iten şeyin, yani altta yatan faktörlerin anlaşılması kapsamında yeni tedavi/terapi süreçlerine götürmüştür. Özellikle obezite tedavisinde uygulanan “kilo alma-kilo verme” odaklı mekanik yaklaşımlar, kişinin özellikle süreç başında istenilen şekilde kilo kaybı olmazsa motivasyonun yitirilmesine sebep olurken aynı zamanda verilen kiloların tekrardan geri alınmaya eğilimli olduğu gözlemlenmektedir."
+      },
+      {
+        "t": "p",
+        "text": "Tedavi/terapinin asıl amacının kişinin “kiloya odaklanması” değil, obeziteye neden olan psikolojik faktörlerin keşfedilmesini sağlamak olmalıdır. Bunları keşfeden kişi kilosuna odaklanmak yerine, değiştirmesi gereken şeyler ile ilgili yaratıcılığını ve esnekliğini kullanma becerisine sahip olacaktır."
+      },
+      {
+        "t": "p",
+        "text": "Hayat akıp giderken dünyaya geldiğimiz anlardan itibaren sahip olduğumuz çeşitli roller vardır. Bu rollerin içindeyken de yerine getirmemiz gereken temel görevler, hayattan ve çevremizden beklentilerimiz aktif olarak devrededir ve her evreyi, her rolü takılmadan, travmatize olmadan atlatmamız gerekmektedir. Obezitede ise roller beden üzerine toplanıp hapsolmuştur. Kişi en erken dönemde sadece “yiyen, emen, memeye muhtaç olan” rolünde saplanıp kalmıştır. Hissedilen tüm duygular — öfke, sevinç, acı vb. — bedene yani “yiyen” rolüne bastırılır. Duygu ve beden ayırt edilemez parçalar halinde birbirine dolanmış bir hale gelir."
+      },
+      {
+        "t": "p",
+        "text": "Obez bireyler zevkin gecikmesinden rahatsız olurlar, hazzı erteleyemezler. Hazzın ertelenmesine karşı gösterilen tolerans erken dönemde anne-bebek ilişkisinde öğrenilir veya öğrenilemez bir tablo halini alır."
+      },
+      {
+        "t": "p",
+        "text": "Beslenme/meme emme hazzının ertelenmesi ve bebeğin bu dönemde sakinleştirilebilmesi “anne”ye bağlıdır. Bebek meme istediğinde, biyolojik saatinin fark edilmesi ve gerek duyulmayan emme davranışı isteği karşısında bebeğin tensel temasa ihtiyacının olabileceğinin düşünülmesi, bebeğin ihtiyaçlarının karşılanıyor olması gerekmektedir. Annenin, bebeğin biyolojik ihtiyaçlarını fark etmeyip bebeğin her haz arayışında ona meme ile karşılık veriyor olması kişinin duygularını “yemeğe gömmesine” neden olur. Bebek, yemeğin dış dünya ile bağ olduğunu, sakinleştirme aracı olduğunu ve kolayca ulaşılabilir boyutta olduğunu fark ettiği durumda kendini “aşırı yemekten” koruyan tüm kontrolleri kaybeder."
+      },
+      {
+        "t": "p",
+        "text": "Erken dönemde bebeğin, kendi ile dış dünya arasındaki ayrımı fark etmeye başlamasıyla birlikte sosyalleşme gerçekleşir. Sosyalleşme peşinden “ötekilerin” bakışını fark etmeyi ve bedenle ilgili fikirlerin oluşmasını sağlar. Bebeğin ilk sosyalleştiği kişi kendisine “bakım” veren annesidir. Annenin bebeği bütün olarak algılamaması, ona tiksindirici, kusurlu, düzeltilmesi gereken, donuk ve fark etmeyen gözlerle bakması ilk sosyalleşme deneyimini sekteye uğratır. Obez bireylerin beden imajlarına yönelik yoğun bozuklukları vardır. Kendilerine dışarıdan baktıklarında tıpkı ilk bakan göz gibi kusurlu olarak algılarlar bedenlerini. Beden algısındaki bozukluk, sosyal işlevlerinde bozulması ile bir kısır döngüye girer."
+      },
+      {
+        "t": "p",
+        "text": "“Yetersizlik” obezite sarmalındaki bir diğer durumdur. Bu yetersizlik en başta anne-bebek ilişkisinde görülür. Anne ne yaşıyorsa, bebek bunu bedenine hapsolmuş bir şekilde deneyimler. Anne bebeği kendi yetersizliğinden dolayı ya aşırı besler ve çocuk doyduğunun farkına varmaz ya da annenin ihmalkârlığı nedeniyle bebek yiyecekle karşılaştığında annenin boşluğunu doldurmak için durmadan yer. Obezite ile mücadele eden bireylerdeki “tıkanırcasına yeme (binge eating)” bu dönemden temel alır. Yoğun yetersizlik hissi ile dünyada var olabilmek oldukça zordur. Kişi gittikçe ruhsal olarak küçülürken buna bağlı dünyada fiziksel olarak daha fazla yer kaplamaya başlar. Fiziksel olarak yer kaplamak, ruhsal olarak yapılamayanın sağlıksız olan kısmıdır. Yetersizlik aynı zamanda önce acı veren duyguların hissedilmesine karşı toleransı azaltırken, sonra tüm alanlara yayılır ve kişi hiçbir duygusunu kucaklayamaz hale gelir. Obez bireylerin çoğu çok üzgün bir olaydan bahsetseler bile gülerek ve sanki neşeli şeylerden bahsediyorlarmış gibi anlatırlar. Bu da duyguların iç içe geçmesinin ve kabul edilememesinin bir göstergesidir."
+      },
+      {
+        "t": "h3",
+        "text": "Obezitenin Sağlıklı Tedavisi İçin"
+      },
+      {
+        "t": "ol",
+        "items": [
+          "Ruhsal Boşaltım: Obez bireyler an’da kalmakta, “şimdi ve burada” olmakta zorluk çekerler. An’dan kopuk olmak, iletişimi güçleştirirken duyguları fark etmek ve ifade etmede zorluğu da peşinden getirir. Sadece sözel olarak ifade etmeye dayalı olan terapi yöntemleri bu anlamda süreci yavaşlatabilir ya da yetersiz kalabilir. Obez bireylerin terapisi için eylem metodu içeren “psikodrama ya da sanat terapisi” formatındaki terapi metodları daha işlevseldir. Hareket ederek çalışmak, duygusal olarak rahatlamayı beraberinde getirirken kişinin ruhsal boşaltım yapmasını sağlar.",
+          "Başkası Olma: Kişinin kendi bulunduğu rolden çıkarak “öteki” olması, yeni bir bakış sağlarken kendine ait olmayan duyguların fark edilmesini ve bırakılmasını sağlar. Kişi başkası olduğunda kendine, bedenine tarafsız bir göz ile bakabilme cesaretine sahip olur. En önemlisi de içinde bulunduğu bedenden çıkıp kendine bakma imkânı sağlayan “başkası olma”, beden algısının da düzelmesini sağlar.",
+          "Yemeğe Yönelmeyi Sağlayan Faktörlerin Keşfedilmesi: Kişinin tüm psikolojik alt yapısını keşfetmesi, yemeğe sadece “fiziksel bir faktör” olarak bakmaması; tıkanırcasına yeme ataklarını azaltan ve ortadan kaldıran bir süreçtir.",
+          "Duyguların Kucaklanması: Tüm duyguların öncelikle “derinlemesine” hissedilmesi gerekir. Özellikle terapi sürecinde kişinin yoğun ağlamaları çok işlevseldir. Kişinin duygularını kabul ediyor olması ve ağlamak gibi yaşantılaması, istenilmeyen duyguların rahatsız edici etkilerini ortadan kaldırır.",
+          "Problem Çözme Becerilerinin Gelişmesi: Yaşanılan zorlukların bedene bastırılmadan çözüme kavuşturulacak “baş etme stratejilerinin” öğrenilmesini içerir. “Hayır” diyebilme gücüne sahip olmak bu anlamda önemli diğer faktördür.",
+          "Kişinin Kendisini Özel Hissetmesi ve Gücünü Fark Etmesi: Tüm erken dönem takılmaları sonucunda gelişen kendini “yetersiz, değersiz” algılamalarının bedende imaj bozukluğu yaratmasının karşıtı olarak “biricik ve sadece kendi o olduğu için” özel hissetme duygusunu deneyimlemesi kişi için son derece önemlidir."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ofke-duydugumuz-bir-kimseyi-asla-terk-edemeyiz",
+    "title": "Öfke Duyduğumuz Bir Kimseyi Asla Terk Edemeyiz",
+    "category": "makaleler",
+    "excerpt": "Kişiler “yaşam senaryosunu” önceki nesillerden devralıp sanki kendi yazgısıymış gibi sahiplenirler. Altta yatan asıl korku, hem kendimizin hem de çocuklarımızın sosyal tecride uğraması ve reddedilmesidir…",
+    "date": "28 Şubat 2021",
+    "readTime": 5,
+    "theme": "deep",
+    "variant": 3,
+    "content": [
+      {
+        "t": "p",
+        "text": "Kişiler “yaşam senaryosunu” önceki nesillerden devralıp sanki kendi yazgısıymış gibi sahiplenirler. Yerini aldığımız aile bireylerine ait fiziksel rahatsızlıkların hissedilmesi ve yaşanmasına da oldukça sık rastlanır. Ait olduğumuz sosyal grubun değerlerini öğrenme ve onları uygulama isteğimiz, hayatta kalma güdümüzle birebir bağlantılıdır. Altta yatan asıl korku, hem kendimizin hem de çocuklarımızın sosyal tecride uğraması ve reddedilmesidir. Reddedilmek, arka planda, kişi farkında olmasa da ölüm anlamına gelir. Annemiz, babamız, atalarımız yaşamla bağımızdır. Onlar hakkında hissettiklerimiz yaşam hakkında hissettiklerimizdir. Fiziksel boyuttaki kaynağımızı temsil ederler ve bunu hepimiz bir şekilde biliriz. Etkisi ister olumlu ister olumsuz olsun, bu anlayış herkese derinden dokunur."
+      },
+      {
+        "t": "p",
+        "text": "Tüm kişisel olgunlaşma ve bireysel gelişim çalışmalarının temel ilkesi, kişilikte reddedilip dışlanmış ne varsa ortaya çıkarıp kabul edilmesini sağlayarak yürekte bunlara yer açmaktır. Aynı şekilde, önceki nesillerde dışlanmış aile bireylerinin de aileye dahil edilmesi, tanınması ve sevgiyle anılmasını gerekmektedir. Bu ilkenin özünde kavranması gereken, reddettiğimiz şeyin reddedildiği sürece büyük güce sahip olduğudur. Reddetme çabamız reddedilenin güçlenmesine ve bizi izlemesine neden olur. Hortlak sandığımız şey, onun hortlak olduğuna inanmamızdan güç alarak peşimizi bırakmaz. Onun rüzgârda sallanan bir örümcek ağı olduğunu keşfettiğimizdeyse korku geçer. Bakmaya tahammül edemediğimiz şeye bir kere “evet” deyip de baktığımızda, içimizde bir şeyler değişir. Bu sabit bir kabullenme değildir. Aynı zamanda korktuğumuz hortlaklara kendimizi açmak ve onlara duyduğumuz sevgimizle yüzleşmemiz gerekmektedir."
+      },
+      {
+        "t": "quote",
+        "text": "Öfke duyduğumuz bir kimseyi asla terk edemeyiz. Öfke de, sevgi gibi bağlayıcı bir ilişkidir."
+      },
+      {
+        "t": "p",
+        "text": "Başkalarıyla kurduğumuz her ilişkide aslında kendimizi keşfederiz. Bir diğerine duyduğumuz ihtiyaç, kendi bireyselliğimizde sahip çıkmadığımız parçalarımızı keşfetmeye ve kendi bütünlüğümüze duyduğumuz ihtiyaçtır. Aslında diğeri yoluyla kendimizle ilişki kurarız. Bastırdığımız, sakladığımız ve keşfedilmemiş tüm yönlerimizi sevmeyi ve onlara sahip çıkmayı öğreniriz. Kendi bütünlüğüne ulaşmış bireyler olduğumuzda diğerlerine duyduğumuz bağımlılık azalır, hatta belki tamamen ortadan kalkar. O zaman sevgi bir ihtiyaç veya bağımlılık olmaktan çıkar ve yeni bir nitelik kazanır. Gelişmemiz için iki şey gereklidir: bir başkasına ihtiyaç duyduğumuzun farkına vararak yakın ilişkinin zorluklarına hodri meydan demek ve bunu yaparken anlayışımızı ve sevgimizi ilişkinin bilinen boyutunun ötesine taşımak."
+      },
+      {
+        "t": "p",
+        "text": "Kalıcı mutluluğun ise tek yolu vardır: Mutluluğum dışarıya, dış dünyanın arzularımı yerine getirip getirmeyişine mi bağımlı, yoksa kendi içimden mi filizleniyor? Eğer dış dünyaya bağlıysa mutluluğum geçici olacaktır; eğer varlığımın doğal bir niteliğindeyse, özgün olarak bana aittir."
+      }
+    ]
+  },
+  {
+    "slug": "yoksa-travmaniz-mi-var",
+    "title": "Yoksa Travmanız mı Var?",
+    "category": "makaleler",
+    "excerpt": "Travma, anksiyete, depresyon, kaygı bilmem ne bilmem ne… Acı çeken ruhun ilacını bilemediğimizde arkasına sığındığımız kategoriler. Hatta uğruna cilt cilt kitaplar yazdığımız.",
+    "date": "7 Mart 2021",
+    "readTime": 3,
+    "theme": "rose",
+    "variant": 4,
+    "content": [
+      {
+        "t": "p",
+        "text": "Travma, anksiyete, depresyon, kaygı bilmem ne bilmem ne… Acı çeken ruhun ilacını bilemediğimizde arkasına sığındığımız kategoriler. Hatta uğruna cilt cilt kitaplar yazdığımız."
+      },
+      {
+        "t": "p",
+        "text": "Sahi nedir travma? Travması olan insan olur mu? Anne terliği, hiçbir zaman saç okşamayan baba, yetersiz hissettiren öğretmen, zorbalık yapan arkadaş, istismarcı amca… Hangimizin hayatına uğramadılar? Neye göre kategorilendireceğiz çektiğimiz acıları? Şunu yaşamışsak bu, bunu yaşamışsak bu mu diyeceğiz kendimize? Acı aynı acı değil mi?"
+      },
+      {
+        "t": "p",
+        "text": "Duyuldunuz mu hiç? Anlaşıldınız mı? Gerçekten koşulsuz sevildiğinizi hissettiniz mi? Cevabınız “hayır” ise bunlar da travmatik değil midir?"
+      }
+    ]
+  },
+  {
+    "slug": "mideye-giden-yolda-psikolojik-destek",
+    "title": "Mideye Giden Yolda Psikolojik Destek",
+    "category": "makaleler",
+    "excerpt": "Mideye giden yolun “ruh”tan geçeceğini hiç düşünmüş müydünüz? Ruhumuz, bilinçdışımız, psikolojik dünyamız ne derseniz artık tüm hayatımızı belirleyen yegâne şey.",
+    "date": "14 Mart 2021",
+    "readTime": 4,
+    "theme": "sand",
+    "variant": 0,
+    "content": [
+      {
+        "t": "p",
+        "text": "Mideye giden yolun “ruh”tan geçeceğini hiç düşünmüş müydünüz? Ruh’tan geçmeyen şey var mı? Ruhumuz, bilinçdışımız, psikolojik dünyamız ne derseniz artık tüm hayatımızı belirleyen yegâne şey. Kıyafet tercihimizden eş seçimimize, aldığımız kilolardan alamadığımız kilolara kadar her şey psikolojik süreçlerle bağlantılı. Farkında olduğumuz ya da olmadığımız tüm yaralar kanarken başka yerlerden belli ederler kendilerini."
+      },
+      {
+        "t": "p",
+        "text": "Pek çok tercihin psikolojik boyutu gelişen sosyal medya aracılığı ile bilinirken, beslenme üzerinde çok durulan bir konu değildir maalesef. Beslenme küçücük bir çocuğun annesi ile olan ilişkisinin temel göstergelerinden biriyken, biz yetişkinlerin de perde arkasına ittiğimiz süreçlere ayna tutan bir değişkendir. Durmadan yemelerimiz, tıkanırcasına yemelerimiz, yememelerimiz çok eskilerden getirdiğimiz birikimlerimizin sonucu. Ruhumuzu doyurmak için karnımızı doyurma alışkanlıklarımız mesela… Yerken neyi ve neden yediğimizin farkında mıyız?"
+      },
+      {
+        "t": "p",
+        "text": "Psikolojik destek alanında beslenme psikolojisi ile çalışma genellikle kişinin “neyi yediği”, “kimi yediği” ya da “yemeği reddederken aslında kime sırtını döndüğünün” aydınlatılması ile ilerler. Kişi önce temel perde arkası süreçlerin farkına vararak kendi dünyasını aydınlatır, farkındalık ile birlikte değişim gelir. Önce yara iyileşir, sonra ruh değişir…"
+      }
+    ]
+  },
+  {
+    "slug": "cocugun-dunyasindan-anne",
+    "title": "Çocuğun Dünyasından “Anne”",
+    "category": "makaleler",
+    "excerpt": "“Acılar içindeyim, üşüyorum. Ne olduğunu anlayamıyorum. Çok rahat bir yerlerdeydim. Yumuşacık, sıcacık, sessiz. Şimdi hiç öyle değil. Az kalsın boğuluyordum…”",
+    "date": "21 Mart 2021",
+    "readTime": 8,
+    "theme": "teal",
+    "variant": 1,
+    "content": [
+      {
+        "t": "quote",
+        "text": "Acılar içindeyim, üşüyorum. Ne olduğunu anlayamıyorum. Çok rahat bir yerlerdeydim. Yumuşacık, sıcacık, sessiz. Şimdi hiç öyle değil. Az kalsın boğuluyordum. Nereye fırlatıldım böyle? Burası neresi? Korkunç bir gürültü var. Gözlerimi acıtan bir parlaklık. Hareket eden ışıklar var, renkli. Nedir bunlar? Çok korkuyorum. Az önce çıktığım yere dönmek istiyorum. Bu kadar görüntüye ve bu kadar gürültüye katlanamıyorum. En iyisi görmemek, duymamak: uyumak. Çok iyi uyuyunca rahatlıyorum."
+      },
+      {
+        "t": "quote",
+        "text": "Neden olduğunu bilmediğim bir sıkıntı başladı yine. Müthiş bir korku. Bu neresi olduğunu bilmediğim yeni yerde var olmamı tehdit edici bir şey bu. Bağırıyorum. Avazım çıktığı kadar. O da ne? Bir şeyler hissediyorum. Adlarını daha sonra öğreneceğim dudaklarımda ve ağzımda… Bir de tenimde yeniden hissettiğim bir sıcaklık. Hemen dudaklarımın arasına alıyorum o yumuşak şeyi. Ağzımı dolduruyor. Daha çok almak istiyorum. Çekiyorum içime. Gırtlağımdan aşağılara ılık bir şeyler süzülüyor. Çok güzel kokuyor. Büyük bir haz duyuyorum. Az önceki büyük sıkıntı ve korkum geçmeye başlıyor. Yine sonradan öğreniyorum ki karnım doyuyor. Ağzıma aldığım şey bir memeymiş, gırtlağımdan süzülen de süt. Bunların hepsinin adlarını ve ne olduklarını hep sonradan öğreniyorum. Ama bildiğim bir şey var ki bana çok güzel duygular yaşatıyorlar, korkularımı gideriyorlar, beni çok rahatlatıyorlar. Emmek ve ardından uyumak öyle güzel ki."
+      },
+      {
+        "t": "quote",
+        "text": "Bu hep böyle yinelenip duruyor. Ne zaman acı çekmeye başlasam, sıkıntı ve korku duysam tenimde gezinen ve sarıp sarmalayan o hoş sıcaklık. Bir de içime aldıklarım. Ağzımda hissettiğim o müthiş hisleri tarif bile edemem. Yavaş yavaş bunlar olurken bir görüntü de dikkatimi çekmeye başlıyor: bir yüz. Yaşamımı tehdit eden acılarım, açlığım, korkularım geçerken, ağzıma ve içime aldıklarımla o büyük hazları yaşarken hep aynı görüntü duruyor karşımda. Tüm bu güzellikleri yaşayabilmem için biraz bağırmam gerekiyor önce. Bazı zamanlar biraz fazlaca ve uzun bağırmam gerekiyor. Bir türlü gelmek bilmiyor o keyifli anlar. Tam da çok acı çektiğim ve çok bağırdığım bir sırada oluyor yine. Tenimde, dudaklarımda hissettiklerimle birlikte karşımda o yüz. Tam doymaya başladığımı hissediyorum ki birden acılarım, açlığım, sıkıntı ve korkularım tekrar bastırıyor. Niye bu kadar kısa sürüyor anlamıyorum. Ama o sırada tekrar görüyorum o yüzü. Bu sefer gerçekten doyuyorum ve uykuya dalabiliyorum. Demek ki az önceki gerçek değildi. Kaç kez tekrarlandıktan sonra bunu ancak anlayabildim. Sadece hayal etmişim. Hayal ettiğimle bir süreliğine doymuşum. Demek ki bir iç var, içim; hayallerim oradan besleniyor, içe attıklarımdan; ama bunlar gerçek değil, çünkü gerçekten ihtiyaçlarımı karşılamıyor, bir süre için yatıştırıyor. Bir de gerçekten doyuran var, o dışarıdan geliyor. Demek ki bir iç var, bir de dış. İçim ve dışım. Yani bir ben varım, bir de benim dışımdakiler. Bağırdığım zaman benim dışımdan bir şey geliyor, memesi, sütü ve yüzü olan. Benim dışımda bir varlık. Ona dokunabiliyorum. Onu hissedebiliyorum. Tenimde onun dokunuşlarını hissediyorum. Arada bir de hem dokunduğumu, hem dokunulduğumu hissediyorum. Aaa evet, bu benim. Kendime dokunuyorum. Bir kez daha anlıyorum beni ve benim dışımı. Kendimi hissediyorum. Beni dışarıdan ayıran bir tenim var. Dışarıdaki her şey ona değdikçe hissediyorum. Böylece sınırlarımı keşfediyorum. Bedenimin sınırlarını. Bir bütün olarak derim beni sarıyor, dışımla içimi ayıran bir hat oluşturarak ayrı bir varlık olarak beni tanımlamama yardımcı oluyor. Tabi bana dokunanların yardımcılığını da inkâr edemem."
+      },
+      {
+        "t": "quote",
+        "text": "Ne zaman sıkıntı, acı, korku yaşasam onu görüyorum. Anne denilen o muhteşem varlığı. O geliyor ve tüm acılarım bir süre sonra diniyor. Tüm ihtiyaçlarımı karşılıyor. Sarıyor, sarmalıyor, ısıtıyor, yatıştırıyor, doyuruyor, zevk veriyor. Tamamen hayatım ona bağlı. Ona bağımlıyım, ona mecburum. O olmadan yaşayamam. Tam da bu nedenle ondan nefret ediyorum aynı zamanda. O her şeye sahip. Cömert, kocaman memeleri var. İçi sütle dolu. Beni sarıp sarmalayan güçlü kolları, sıcacık teni… Onun yanında öyle çaresiz bir halim var ki. Bu çaresizlik beni deli ediyor. Öfkeyle ısırıyorum memelerini."
+      },
+      {
+        "t": "quote",
+        "text": "Bu arada emmekten aldığım zevkte doruğa ulaştı. Öyle güzel ki, parmağımı da emmeye başladım. Meme yeterli olmayınca alıyorum parmağımı ağzıma, emerek uyuyorum…"
+      }
+    ]
+  },
+  {
+    "slug": "panik-atak",
+    "title": "Panik Atak",
+    "category": "makaleler",
+    "excerpt": "Panik kelimesi Yunan mitolojisindeki yalnız yaşayan, üzgün olduğu zamanlarda bir mağaraya kapanan, rahatsız edildiğinde çığlıklar atarak korkutan bir Tanrı’nın — Pan’ın — isminden gelmektedir.",
+    "date": "28 Mart 2021",
+    "readTime": 7,
+    "theme": "night",
+    "variant": 2,
+    "content": [
+      {
+        "t": "p",
+        "text": "Panik kelimesi Yunan mitolojisindeki yalnız yaşayan, üzgün olduğu zamanlarda bir mağaraya kapanan, rahatsız edildiğinde çığlıklar atarak korkutan bir Tanrı’nın ismi olan “Pan”dan gelmektedir. İsmin hikâyesi ile panik atak durumu elbette tesadüf değildir. Panik atak tam da böyle bir şeydir. Bilinç seviyesinde veya bilinç dışında kişinin üzüldüğünde, stresli yaşam deneyimlerinde bedeninin çığlıklar atması ve korkmasıdır."
+      },
+      {
+        "t": "p",
+        "text": "Panik atak çok sık rastlanan bir kaygı durumudur. Belirtilerin şekli ve şiddeti kişiden kişiye göre değişmektedir. Önce panik atak belirtilerine bakalım:"
+      },
+      {
+        "t": "ol",
+        "items": [
+          "Çarpıntı, kalp atımlarını duyumsama ya da kalp hızında artma olması",
+          "Terleme",
+          "Titreme ya da sarsılma",
+          "Nefes darlığı ya da boğuluyor gibi olma duyumları",
+          "Soluğun kesilmesi",
+          "Göğüs ağrısı ya da göğüste sıkıntı hissi",
+          "Bulantı ya da karın ağrısı",
+          "Baş dönmesi, sersemlik hissi, düşecekmiş ya da bayılacakmış gibi olma",
+          "Kontrolü kaybedeceği ya da çıldıracağı korkusu",
+          "Ölüm korkusu",
+          "Uyuşma veya karıncalanma",
+          "Üşüme, ürperme ya da ateş basmaları"
+        ]
+      },
+      {
+        "t": "p",
+        "text": "Panik atak, dayanılması zor belirtileri içinde barındırır. Kişi sürekli olarak bu belirtilerin ortaya çıkacağı korkusunu yaşar ve bu sebeple özellikle ilk belirtiyi yaşadığı durumlardan ve ortamlardan kaçınır."
+      },
+      {
+        "t": "p",
+        "text": "Panik atak belirtileri Tanrı Pan’ın üzüldüğünde çığlık attığı çığlıkların bedende karşılık bulmasıdır. Deneyimlenmesi zor olan bu belirtiler kişinin yaşadığı deneyimleri duymaması-fark etmemesi sonucunda bedeninin dile gelmesidir aslında. Bizler yaşadığımız şeylerin hemen ortadan kalkması için çaba gösterir, doktor doktor gezer, bir sürü psikoloğa gider, farklı terapiler-ilaçlar deneriz. Bedenimizin çığlığına kulak vermeyiz. Bedenimiz ne oluyor da bu şekilde zangır zangır, bizi korkudan öldürürcesine bağırıyor? Bugün yanınızda biri bağırmaya-ağlamaya başladığında ona nasıl tepki verirsiniz? Sus-kes sesini mi dersiniz? Neler oluyor? İyi misin diye sorar mısınız? Peki ya bedenimize? Bedenimizin bu çaresizce çığlıklarına soruyor muyuz? Sana — dolayısıyla bana — ne oluyor? Diye."
+      },
+      {
+        "t": "p",
+        "text": "Panik atak gibi belirtilerin ortaya çıkmasının en yaygın sebeplerinden biri “kişinin kendi duygularının farkında olmamasıdır”. Sadece yaşayan, duyguları üzerine düşünmeyen bireyler dolayısıyla bunları ifade de edemezler. Sonsuz bir enerji ve duygu birikimi kişinin bedeninde sıkışıp kalır. Üzüldüğümüzde-korktuğumuzda bunun üzerine düşünmek yerine bu duyguların hemen geçmesini diler ve onları bastırırız. İfade etmemiz bile ya öfkeyle olur ya da dilimizden dışarıya çıkmaz. Olumsuz duyguların deneyimlenmesi zordur ve özellikle panik atak durumu yaşayan bireyler için korkunçtur. Bu duyguları deneyimlemekten sürekli kaçarlar."
+      },
+      {
+        "t": "p",
+        "text": "Panik atak yaşayan bireylerde en çok görünen duygulardan biri de “suçluluk” hissidir. Bilinçli veya bilinçsiz şekilde olaylara-yaşantılara-kişilere karşı yoğun olarak suçluluk hissederler."
+      },
+      {
+        "t": "p",
+        "text": "Suçluluk hissi, kişinin fark edilip anlamlandırılmadığında kişinin bedenine-yaşamına büyük darbe vuran hislerden biridir. Suçluluk aslında içe dönmüş öfkedir. Kişiyi gittikçe depresif ve değersiz hissettirir. Kişinin kendi dışında gelişen olaylardan bile kendisini suçlamasına, yeryüzündeki bütün olumsuz şeylerin onunla ilgili olduğunu hissetmesine sebep olur. Bu kişiler hayattan zevk almak konusunda çok zorlanırlar. İyi şeyleri hiç üzerlerine almazlar, kötü olan her şey ise benliklerine yapışıp kalır."
+      },
+      {
+        "t": "p",
+        "text": "Özet olarak panik atak; kişinin kendini duymaması, olumsuz duyguları yaşamaktan kaçması, yaşadıkları üzerinde bir anlam bulunmaması ve bedenin çığlıklar atması halidir. Amacımız bedeninin çığlıklarına kulak vermek ve onu dinlemektir. Duyulan beden ne ağrır, ne acır ne de panik atak geçirir."
+      },
+      {
+        "t": "h3",
+        "text": "Panik Atak Sürecinde Neler Yapalım?"
+      },
+      {
+        "t": "p",
+        "text": "Panik atak belirtilerinin tekrar gelmesi-yaşanması korkusu bireyler için çok büyük bir kaygı kaynağıdır. Bazı kişilerde bu belirtiler tekrar eder, bazılarında birkaç kez yaşanır ve ortadan kaybolur. Tekrar eden panik atak belirtilerinde bedenin sesini duymak önemlidir. Panik atak belirtileri asla “rastgele” olmaz. Belirtileri ortaya çıkartan “stres yaratan bir uyaran, tetikleyici bir şey” mutlaka vardır."
+      },
+      {
+        "t": "p",
+        "text": "Belirtiler ortaya çıkınca dikkat etmemiz gereken şeyler;"
+      },
+      {
+        "t": "ol",
+        "items": [
+          "Bilinenin aksine o anda belirtileri yok etmek veya geçirmek için uğraşmayın. Şöyle düşünelim; şu anda size “mavi bir fil düşünmeyin sakın!” dediğimde aklınıza hemen mavi bir fil gelecektir. Panik atak belirtilerini yok etmek de böyledir. Atak anında geçirmek için yaptığınız eylemler sizi ataklara hapseder. Atak anında gelen belirtilerinizin daha fazla içine girin. Örneğin; nefes alamıyormuş gibi hissettiğinizde derin derin nefes almaya çalışmak yerine, göğsünüz sıkışıyorsa o sıkışmaya odaklanın, başınız dönüyorsa baş dönmenize odaklanın. Yok etmeye çalışmayın. Belirtilere odaklanmak, bedeninizin sesini duymanızı sağlayacaktır. Sesi duyulan beden yavaş yavaş sesinin şiddetini kısmaya başlar.",
+          "Panik atak asla “durup dururken” ortaya çıkmaz. Bir film, bir bakış, ses, koku vb. birçok şey ruhsallık üzerinde tetikleyici olabilir. Panik atak geldiği anda veya belirtiler ortadan kalktığında üzerine düşünmek lazım. Tetikleyici ne oldu? Bu tetikleyici benim bedenimin neden çığlık atmasına neden oluyor?"
+        ]
+      },
+      {
+        "t": "p",
+        "text": "İster panik atak, ister başka bedensel süreçler olsun. Bedenimizin neden tepki verdiğini bulmak hayatımız için en büyük kazanım ve şifa olacaktır. Anılar ve rüyalar, belirtilerin nedenleri hakkında çok önemli bilgiler verir."
+      },
+      {
+        "t": "p",
+        "text": "Özetle panik atak belirtilerinden korkmak yerine onları kucaklamak, geldiğinde kendimiz hakkında önemli bilgiler edinmek için bedenimizin bize verdiği fırsatı değerlendirmek gerekir. Farkındalık en büyük şifadır."
+      }
+    ]
+  },
+  {
+    "slug": "belirtileri-cocuklarin-elinden-almayalim",
+    "title": "Belirtileri Çocukların Elinden Almayalım",
+    "category": "makaleler",
+    "excerpt": "Çocuklar dil becerileri gelişmeden önce bedensel belirtilerle duygularını ifade ederler. Bebek ağlar anne altını değiştirir, bebek ağlar anne emzirir.",
+    "date": "4 Nisan 2021",
+    "readTime": 5,
+    "theme": "terra",
+    "variant": 3,
+    "content": [
+      {
+        "t": "p",
+        "text": "Çocuklar dil becerileri gelişmeden önce bedensel belirtilerle duygularını ifade ederler. Bebek ağlar anne altını değiştirir, bebek ağlar anne emzirir. Hislerimizi, duygularımızı, yaşadıklarımızı bedensel belirtilerle dışa vurmak daha anne rahmindeyken öğrendiğimiz bir şeydir. Büyükçe fark ettiğimiz veya etmediğimiz duygularımızı da bedensel belirtilerle dışa vururuz. Bu aynı zamanda yaşanan duygunun yatıştırılması, boşaltılması ve dışarıya ifade edilmesidir."
+      },
+      {
+        "t": "p",
+        "text": "Altını ıslatan, tırnak yiyen, saçlarını yolan, bol bol hastalanan, parmak emen vb. gibi belirtiler gösteren çocuklar da duygularını bize bedensel şekilde ifade ediyorlar. “SEVGİLİ ANNE-BABA/ÖĞRETMENLER/DIŞ DÜNYADAKİ YETİŞKİNLER, içimde tanımlayamadığım duygular var, ben bu duyguları anlamlandıramıyorum, bu duygular minik bedenime ve ruhuma fazla geliyor, siz bu belirtilerle beni anlayın” diyor çocuklar."
+      },
+      {
+        "t": "p",
+        "text": "Çocukların bu belirtilerine bir an önce kurtulmamız gereken başımızın belası durumlar olarak değil, çocuğun bize ifade etmek istediği bir şeyler var diye bakmalıyız. Tırnak yiyen çocuğun ellerine acı oje sürmek herkes için tanıdık bir durumdur. Ne yapıyoruz bu davranışımızla? Çocuğun “ben bir şeyler hissediyorum” dediği dili onun elinden alıyoruz. Bedensel belirtiler çocuğun dilidir. Belirtileri çocukların ellerinden almamalıyız. Bu hem çocuğun ifade dili hem de çocuğun duygularını düzenleme sürecidir. Bizler hem çocuğun ifade dilini elinden alıyoruz, hem de yaşadığı duyguyu düzenlemesi için bulduğu yolu yok ediyoruz. Hiç çocuğun ne yaşadığına odaklanmıyoruz, üzerine düşünmüyoruz."
+      },
+      {
+        "t": "p",
+        "text": "Çocuk kliniğinde özellikle tırnak yeme ve alt ıslatma problemleri çok yaygındır. Bu güne kadar gördüğüm tüm ebeveynler bu belirtilerin yok olması için çocuklarını getirdiler. Hiçbir ebeveyn “çocuğum bunları yapıyor ama acaba neden? Nedenini bilmek istiyorum” diye sormadı. Tek istenilen bu belirtilerin yok olması. Ne kadar büyük haksızlıklar yapıyoruz çocuklarımıza, ne kadar duymuyoruz, üzerine düşünmüyoruz. Evimize gelen misafirlere sonsuz ilgi, şefkat gösterirken; henüz dünyamızda birkaç senedir var olan, evimize yeni gelmiş olan bu minik misafirlere neden böyle davranıyoruz?"
+      },
+      {
+        "t": "p",
+        "text": "Çocukların bedensel belirtileri ortadan kaybolsun diye psikoloji literatüründe pek çok yöntem var. Koskoca psikoloji literatürü bile yıllar boyunca çocukların bedensel belirtileri yok olsun diye yol ararken, yeni yeni “acaba bu belirtiler ne anlama geliyor” diye düşünmeye başladı."
+      },
+      {
+        "t": "quote",
+        "text": "ÇOCUKLARIN BELİRTİLERİNİ ELLERİNDEN ALMAYALIM, ÜZERİNE DÜŞÜNELİM. BİZİM ÇOCUKLARIMIZA NE OLUYOR?"
+      }
+    ]
+  },
+  {
+    "slug": "cocuklar-icin-degiselim",
+    "title": "Çocuklar İçin Değişelim",
+    "category": "makaleler",
+    "excerpt": "Çocuklara bakışımız, temasta bulunurken kullandığımız dil ve beden hareketlerimiz, dünyamızda henüz birkaç senedir bulunan ve her şeyi yeni keşfeden küçük bireyler için çok önemlidir.",
+    "date": "11 Nisan 2021",
+    "readTime": 8,
+    "theme": "sand",
+    "variant": 4,
+    "content": [
+      {
+        "t": "h2",
+        "text": "Çocuklar İçin Değişelim – 1"
+      },
+      {
+        "t": "p",
+        "text": "Çocuklara bakışımız, temasta bulunurken kullandığımız dil ve beden hareketlerimiz, dünyamızda henüz birkaç senedir bulunan ve her şeyi yeni keşfeden küçük bireyler için çok önemlidir. Fiziksel şiddet ve fiziksel istismarı bir kenara koyarak düşünelim, bizim bugüne kadar ki tüm yaralarımız “ötekinin” kullandığı dil yüzünden olmadı mı? Duyduğumuz “beceriksiz, aptal, özgüven eksikliği var sende, gebertirim seni, sen yapamazsın, buna mı üzüldün, ağlayacak ne var? vb.” gibi söylemler hayattaki en büyük travmalarımız, yaralarımız olmadı mı? Biz “dil” ile yaralanıyoruz. Ne ilginçtir ki ellerinde “dil” dışında hiçbir başka materyal olmayan terapistler de “dil” ile iyileştirmeye çalışıyor. O zaman bu sene “ebeveyn-çocuk yılı” kapsamında dilimizi değiştirelim. Emin olun ki değiştirdiğimiz her terim, her davranış mutlaka çocuklara şifa olacaktır. Bugünün şifalanan çocukları geleceğin sağlıklı yetişkinleri olacak. Haydi kolları sıvayalım! Değiştirdiğiniz her dil ile ilgili örnekleri bizi etiketleyerek yayabilir ve birçok insanı cesaretlendirebilirsiniz."
+      },
+      {
+        "t": "h3",
+        "text": "Özgüven Eksikliği Değil / Yetersiz Hissettiği Alanlar Var"
+      },
+      {
+        "t": "p",
+        "text": "Bir çocuk için “özgüven eksikliği” terimi, çocuğun tüm benliği için yetersizlik ifade eder. Sanki çocuğun bu hayatta yeterli olduğu, iyi yapabildiği hiçbir şey yokmuş gibi! Mümkün mü? Çocuk gibi hayal gücü sınırsız, yaratıcılık kapasitesi sonsuz olan birey için benliğinin bu kadar eksikmiş gibi düşünülmesi?"
+      },
+      {
+        "t": "p",
+        "text": "Her bireyin “yeterli hissettiği-yeterli olduğu” ve “yetersiz hissettiği-yeterli olamadığı” alanlar vardır. Bu çocuklar için de geçerlidir. Bazı çocuklar okumayı hızlı öğrenir, bazılarının yazısı çok güzeldir, bazısı sporda iyidir, bazısı iletişimde, bazısı sanatta… Bazısı okumayı çok geç sökecektir, bazısının yazısı çok kötüdür, kimi resim yapmaktan hiç anlamaz, bazısı sakardır…"
+      },
+      {
+        "t": "p",
+        "text": "Her çocuğun iyi yaptığı veya tam istediği gibi yapamadığı bir dünya şey vardır. Tüm bunları topladığımızda “özgüven eksikliği var” diye bir çocuğun bütün benliğinin eksik-yarım olduğunu asla söyleyemeyiz."
+      },
+      {
+        "t": "quote",
+        "text": "ÖZGÜVEN EKSİKLİĞİ OLAN ÇOCUK YOKTUR, ÇOCUKLARIN YETERLİ HİSSETTİĞİ ALANLAR VE YETERLİ HİSSETMEDİĞİ ALANLAR VARDIR."
+      },
+      {
+        "t": "h2",
+        "text": "Çocuklar İçin Değişelim – 2: Duyulma İhtiyacı"
+      },
+      {
+        "t": "p",
+        "text": "Duyulmaya ihtiyaç duymak… Kulağa biraz tuhaf geliyor değil mi? Konuştuğumuz zaman duyuluyoruzdur elbette. Bu durum neden konu olsun veya ihtiyaç olsun ki?"
+      },
+      {
+        "t": "p",
+        "text": "Düşünelim birlikte, yetişkin halimizden düşünelim. Hayatınız boyunca birinin veya birilerinin karşısında hiç olmadığınız, kendiniz gibi davranmadığınız oldu mu? Aslında söylemek istediklerinizin tam tersini söylediğiniz oldu mu? Veya söylemek istediklerinizi daha öfkeli, daha yüksek sesli, daha abartarak ifade ettiğiniz? Söylemek istediklerinizi dolaylı yoldan, beden dilinizle, kılık-kıyafetinizle, size ait olmayan davranışlarınızla veya içeriğini gerçekdışı bir şekilde ifade ettiğiniz? İlla olmuştur. Niye böyle davranıyoruz o zaman? DUYULMA İHTİYACIMIZDAN."
+      },
+      {
+        "t": "p",
+        "text": "Yemek yemek, su içmek gibidir duyulma ihtiyacı. Karşınızdaki sizi duymuyorsa varlığınız da tehlikeye düşer. Yok olursunuz. Fiziksel olarak varken, ruhsal olarak yok olmak kişide derin yaralar açar. Karşınızdaki sizi görüyor, dinliyor, konuşuyor olsa bile acınızı, kaygınızı, heyecanınızı duymuyorsa bu durum çok yaralayıcı olur."
+      },
+      {
+        "t": "p",
+        "text": "Biz çocukları ne kadar görüyor veya duyuyoruz? Evin içinde veya okulda bu küçük bireyler etrafta dolanıyor, oyun oynuyor, konuşuyorlar bizde onları dinliyoruz, fiziksel ihtiyaçlarını karşılıyoruz. Peki ruhsal ihtiyaçları? Görülme-duyulma ihtiyaçları?"
+      },
+      {
+        "t": "h3",
+        "text": "Görebilmek-Duyabilmek İçin"
+      },
+      {
+        "t": "p",
+        "text": "Sözden öteyi duyabilmek, kişinin yaşadıklarını görebilmek için soru sormadan, büyüdükçe unuttuğumuz bir yetimizi hatırlamamız lazım. HİSSETMEK! Gerçekten karşımızdaki hiçbir şey söylemeden hissetmek. Evdeki çocuğu, terapi koltuğundaki danışanı, yanımızdaki eşimizi “hissetmemiz” için ise ilk önce kendimizi duymamız ve hissetmemiz lazım. Sahi biz kendi duygularımızı, travmalarımızı, öfkemizi ne kadar hissediyoruz, yaşantılıyoruz, iyileştirmek için çabalıyoruz? Biz kendimizi duyuyor muyuz ki bir çocuğu veya ötekini duyalım? Kulaklarımız kendimize sağırken bir başkasını duyamayız. Ebeveynlerin en çok zorladığı süreçlerden biri de maalesef bu duyulmamak meselesinden geliyor."
+      },
+      {
+        "t": "p",
+        "text": "Bizler gibi çocuklar da görülmek ve duyulmak isterler. Hayat üzerinde hiçbir kontrolleri olmayan bu küçük bireyler, söylediklerinin ve yaptıklarının ötesindeki davranışlarının, duygularının duyulmasına ihtiyaç duyarlar."
+      },
+      {
+        "t": "p",
+        "text": "Bir çocuğun görülme ve duyulma ihtiyacını ona soru sormadan, yüz ifadesini, beden dilini okuyarak ve ifade ederek karşılayabiliriz. Okuldan eve gelen çocuğa “günün nasıl geçti” diye sorduğunuzda cevap alamazsınız. “İyi”, “oyun oynadım” gibi söylemlerde bulunurlar. Gün boyunca çocuğun yaşadığı kaygıdan, korkudan haberimiz olmadan, onu duymadan hayata devam ederiz. Yetişkinler olarak hep dilden çıksın isteriz ne varsa, fakat özellikle çocuklar dil gelişimleri sebebi ile duygularını, yaşadıklarını bedensel belirtilerle ifade ederler. Çocuğu iyi tanımak önemlidir. Hangi duyguda bedeni nasıl görünüyor? Yanakları kızarınca hangi duyguyu yaşamış oluyor? Tırnaklarını hangi duyguya karşılık yiyor? Kardeşine vurduğunda ne hissediyor? Bunları iyi gözlememiz, iyi koklamamız lazım. Yetişkinler içinde bu durum önemlidir. Karşımızdaki fiziksel olarak görmekten çok, duygularının bedensel karşılıklarını görmek; söylediklerini duymaktan çok cümlelerinin satır aralarını okumak önemlidir. Kendini duyan, ihtiyaçlarını gören ve daha sonra ötekini gören-duyan bireyler olmamız ümidiyle…"
+      }
+    ]
+  },
+  {
+    "slug": "mutluluk-uzerine-konusalim",
+    "title": "Mutluluk Üzerine Konuşalım",
+    "category": "makaleler",
+    "excerpt": "Mutluluk nedir diye sorsam herkes farklı cevap verir. Cevap bireye özgüdür, kişiseldir fakat hayatta en arzuladığımız şeydir de aynı zamanda.",
+    "date": "18 Nisan 2021",
+    "readTime": 6,
+    "theme": "rose",
+    "variant": 2,
+    "content": [
+      {
+        "t": "p",
+        "text": "Mutluluk nedir diye sorsam herkes farklı cevap verir. Cevap bireye özgüdür, kişiseldir fakat hayatta en arzuladığımız şeydir de aynı zamanda. Üzerine sayısız kitap yazılmış, seminerlere konu olmuş, psikoloji literatürünün de çokça çalıştığı bir konudur. Dolayısıyla cevap asla kesin değildir elbette. Belki kıyısından bir yerden yakalayıp, konuşmak, duyurmak ve şifalandırmak üzerine sadece yazabilirim, hepsi bu!"
+      },
+      {
+        "t": "p",
+        "text": "Mutlu olmak denince aklımıza acının tam ters karşılığı gelir. Mutluluk varsa, acı yoktur; acı varsa mutluluk yoktur. İkisi birlikte asla var olamaz gibi hissederiz. Acı olmadan mutluluğa ulaşamayacağımız gerçeği ruhsal sürecin en temel baş dinamiğidir. Hayatta ilk var oluş anımızda yani doğumda bile annemizle temas edene kadar ağlıyorken nasıl “mutluluk varsa acı yok” diyebiliriz ki? Acı varsa mutluluk vardır. Sadece acıyı kucaklamamız gerekir. Ruhumuzun ve yaralarımızın en sızladığı zamanlarda iyileşmek ve iyileştirmek için bir şansımız vardır. Bedenimiz, ruhumuzun mutluluğa giden kaynağı bize gösteriyordur. Acıya böyle bakarsak gerçek mutluluk gelebilir anca. Kalbimizin hızlı çarptığı, bedenimizin ağrıdığı, ruhumuza karanlık çöktüğü anlarda bir şey bize yol gösteriyordur. Al, burası kanıyor ve gör; gör ki düşün; düşün ki fark et; fark et ki iyileşsin; iyileşsin ki mutlu ol…"
+      },
+      {
+        "t": "p",
+        "text": "Bildiklerimizin ne kadar tersi değil mi? Mutluluk bize hep pozitif olmak, negatife odaklanmamak, olumsuz hakkında konuşmamak olarak öğretildi. Bu anca halının altına süpürmek olur. Halınızın altı kirden, pastan dolup taşarken ne mutluluğu yahu!"
+      },
+      {
+        "t": "p",
+        "text": "Mutlu olmak için ilk yol kırılmaktan, acımaktan geçer. Kanayan her meselemiz bize onu görme ve sindirme şansı verir. Sindirdiklerimiz ile mutluluğun ilk yoluna çıkacağız."
+      },
+      {
+        "t": "p",
+        "text": "Peki ikinci yol nedir? Bu da herkes için değişir elbette. Ben sadece kliniksel, dilim döndüğünce psikolojik açıdan ve insan olarak aktaracağım ikinci yolu: “Yaratmak-üretmek”. En temel dürtülerimizi düşünelim; örneğin doğum. Neden doğuruyoruz? Evrimsel olan türün devamı durumunu bir kenara bırakarak düşünelim. 9 ay içimizde bir canlıyı besliyoruz, ağrılarımız, bulantılarımız vb. birçok şey oluyor bedenimizde. Hepsi çok keyifli meseleler değil maalesef. Ya da erkekler neden çocukları olsun istiyor?"
+      },
+      {
+        "t": "p",
+        "text": "Hayatta elimizden geldiğince bir şey üretmek-var etmek veya yaratmak mutluluğa giden önemli yollardan biridir. Doğum da bu sebeple kişiler için önemlidir. En büyük yaratım meselesidir çünkü. Mutlu olmak için illa doğurmalı ya da çocuk sahibi olmalıyız demek değildir asla bu yazdıklarım, asla! Sadece insan için üretmenin önemini söylemek ve belirtmek isterim. Tüm bu hayat şartlarında üretmek ve yaratmak bizi mutlu kılar. Bir yazı yazmak, bir dernekte yer almak, sokak hayvanlarına kendini adamak, proje yazmak, çocuk yetiştirmek, şarkı yapmak, film çekmek, bitki yetiştirmek vb. bir sürü üretme meselesi mutluluk için önemlidir. İnsan yarattıkça ve ürettikçe iyileşir. Çünkü ürettiğimiz her şey bizimle ilgilidir, bizim yaralarımızla bağlantılıdır, iyileştiricidir. Bu sebeple her insan aynı doğrultudaki üretim aşamalarında yer almaz. Yaratma cesareti kişiyi an’da kılar, yaraları doğrultusunda eyleme geçmeye sebep olur, iyileştirir. Hayatta daha sağlıklı kalabilmek için, şifa için yaratmak-üretmek çok önemlidir. Herhangi bir konuda yaratıcı olmak ve eyleme geçmek ruhsal sağlık ve mutluluk için kıymetli bir aşamadır."
+      }
+    ]
+  },
+  {
+    "slug": "terapi-ne-ise-yarar",
+    "title": "Terapi Ne İşe Yarar?",
+    "category": "makaleler",
+    "excerpt": "Benim hikâyem dizi olur mu? Psikolog kimdir? Terapi ne işe yarar? Son dönemlerde artan psikoloji temalı diziler destek almak isteyen kişiler için kafa karışıklığı yarattı.",
+    "date": "25 Nisan 2021",
+    "readTime": 7,
+    "theme": "teal",
+    "variant": 3,
+    "content": [
+      {
+        "t": "h2",
+        "text": "Benim Hikâyem Dizi Olur mu? Psikolog Kimdir? Terapi Ne İşe Yarar?"
+      },
+      {
+        "t": "p",
+        "text": "Son dönemlerde artan psikoloji temalı diziler destek almak isteyen kişiler için kafa karışıklığı yarattı. Çıkan dizilerin gerçek hikâyelerden olması anonim de olsa bireyin mahremiyetini tehlikeye atmakta ve terapi alma arzusu olan kişiler için korku kaynağı olmaktadır."
+      },
+      {
+        "t": "p",
+        "text": "Psikoterapi son derece etik kurallarla çerçevelenmiş, mahremiyetin göz önünde bulundurulduğu bir alandır. Fakat her meslekte olduğu gibi etik ilkeleri göz ardı eden uzmanlar mutlaka vardır."
+      },
+      {
+        "t": "quote",
+        "text": "Bir danışan olarak mahremiyetinizin korunduğundan emin olmak en büyük hakkınız."
+      },
+      {
+        "t": "p",
+        "text": "Seans odaları özel dizayn edilmiş odalardır. Bu odalarda genellikle ses yalıtımı veya ses dağıtıcı müzik sistemi kullanılmaktadır. Konuştuğunuz her şey sadece sizinle terapistiniz arasında kalmak zorundadır. Terapistiniz, kendinize ve başkasına zarar verme ihtimalinizin olması durumunda sadece yetkili mercilere haber verebilir; bu durumda da size mutlaka bilgi vermek zorundadır. Not tutuyorsa bu notları kimsenin erişemeyeceği bir alanda saklamak zorundadır."
+      },
+      {
+        "t": "p",
+        "text": "Terapistiniz akademik bir çalışma yapıyorsa ve sürecinizin bilimsel alana katkı sağlayacağını söylüyorsa sizden izin almak zorundadır. İzin verdiğiniz takdirde kimliğinizi ortaya çıkarmayacak şekilde bilime katkıda bulunabilir."
+      },
+      {
+        "t": "p",
+        "text": "Psikoterapi almaya gittiğiniz kişinin uzmanlığını sorgulamak en temel hakkınız. Maalesef ülkemizde “sahte psikolog” ya da psikoterapi yapma yetkisi olmayan birçok kişi bu alanda faaliyet göstermektedir."
+      },
+      {
+        "t": "h3",
+        "text": "Psikolog Kimdir?"
+      },
+      {
+        "t": "p",
+        "text": "YÖK tarafından kabul edilen yurtiçi psikoloji lisans programları ile denkliği YÖK tarafından kabul edilen yurtdışı psikoloji lisans programlarından lisans derecesi ile mezun olan kişiler, psikolog unvanı kullanma hakkı taşımaktadır. Psikologlar, bireyin bireysel ve toplumsal tutum, davranış, düşünme ve duygu durumlarını inceleyen; davranışın ve zihinsel süreçlerin bilimsel tanım ve açıklamalarını temel alan meslek mensuplarıdır."
+      },
+      {
+        "t": "h3",
+        "text": "Klinik Psikolog Kimdir?"
+      },
+      {
+        "t": "p",
+        "text": "İlgili üniversitenin Psikoloji bölümünden mezun olduktan sonra, yüksek lisans eğitimini “Klinik Psikoloji” üzerine tamamlayan bireylere verilen ünvandır. Klinik psikologlar psikoterapi yapma yetkinliği olan kişilerdir."
+      },
+      {
+        "t": "h3",
+        "text": "Psikoterapi Nedir? / Neden Terapiye Gidilir?"
+      },
+      {
+        "t": "p",
+        "text": "Psikoterapi size, yaşadığınız zorluklar ya da sıkıntılarla ilgili içgörü kazandırmayı, düşünce ve davranışlarınızda değişiklikler meydana getirmek için motivasyonunuzu artırmayı ve bu değişiklikler için uygun yollar bulmanıza yardımcı olmayı amaçlar."
+      },
+      {
+        "t": "p",
+        "text": "Anne rahmine düştüğümüz andan itibaren her gün, her saat “başkasının kıyafetlerini” giymek zorunda kalıyoruz. Annemizin yükleri/kıyafetleri, babamızın yükleri/kıyafetleri, çevredeki diğer bireylerin yükleri/kıyafetleri, toplumsal yükler/kıyafetler… Bu kadar başkalarından bir şeyler almak bize ait olmayan şeyleri üzerimize yapıştırıyor. Pek çoğumuz bu kıyafetlerin farkında bile değiliz. Farkında olamamak, seçimlerimizi neden yaptığımızın nedenini bilmemek; bizi günlük hayatta zorlayan davranışlarda bulunmaya, zorlandığımız duygu durumlarına, ruhsal ve fiziksel hastalıklara sebep oluyor. Sadece bir hayatımız varken bu hayatı bize ait olmayan kıyafetlerle geçiriyoruz. Bazen artık bedenimiz yeter diyor. Panik atak geçiriyor, sivilce çıkartıyor, egzama oluyor, sebebi bir türlü bulunamayan ağrılarla bizi yoruyor. Beden bu kadar farkındayken, bizler nasıl oluyor da kendimize ait bir hayat yaşayamıyoruz? Ya da bunun için çaba sarf etmiyoruz?"
+      },
+      {
+        "t": "p",
+        "text": "Terapi size ait olmayan kıyafetleri çıkarmanızı sağlar. Sallanan bir binanın önce tüm odalarını gezip içeridekilerle tanışmanızı, orayı keşfetmenizi, daha sonra o binayı yıkmayı sağlar. Yıkılan bir binanın yerine yeni ve sizin arzuladığınız bir yapı dikilir. Terapi, size ait olmayan kıyafetlerin çıkartıldığı, derinizi, teninizi keşfettiğiniz, bedeninizin ve ruhunuzun şifalandığı bir süreçtir. Terapi gül bahçesi değildir, yeni bir kimlik inşasıdır."
+      }
+    ]
+  },
+  {
+    "slug": "bagirsak-sagligi-ruh-sagligi",
+    "title": "Bağırsak Sağlığı = Ruh Sağlığı",
+    "category": "makaleler",
+    "excerpt": "Duygularımız bedende yer alır. Hissettiğimiz, deneyimlediğimiz, yaşadığımız her şey bedene yerleşir. Bunu günlük hayatta fark etmeden dile de getiririz aslında.",
+    "date": "2 Mayıs 2021",
+    "readTime": 7,
+    "theme": "night",
+    "variant": 0,
+    "content": [
+      {
+        "t": "p",
+        "text": "Duygularımız bedende yer alır. Hissettiğimiz, deneyimlediğimiz, yaşadığımız her şey bedene yerleşir. Bunu günlük hayatta fark etmeden dile de getiririz aslında. “Midemde kelebekler uçuştu”, “işi o kadar yavaş yaptı ki mideme kramplar girdi”, “korkudan felç geçirecektim”…"
+      },
+      {
+        "t": "p",
+        "text": "Duygular bu kadar bedende yer alırken, bedenimizden hiç haberimiz olmadan yaşıyoruz. Duygularımızdan da çok kopuk durumdayız. Bu hayatta sadece nefes alıp veriyoruz, çalışıyoruz, çocuk büyütüyoruz; kendimize yabancı, bedenimize yabancı bir şekilde. Çoğu zaman da hiçbir şeyin farkında değiliz; hastalandığımızda kafamız karışıyor, belki anca o zaman durup düşünüyoruz bir şeyleri. Şifayı hep yapay olanda aramaya başlıyoruz, kapı kapı dolaşıyoruz fakat neden hastalandığımızı düşünmüyoruz çoğu zaman…"
+      },
+      {
+        "t": "p",
+        "text": "Bedeni dinlemek bize kendi tarihimiz hakkında çok önemli bilgiler verir aslında. Pek çok yere başvurmak, ötekinden ne olduğunu duymaya çalışmak yerine asıl bilgeye — bedene — sormak yeterlidir…"
+      },
+      {
+        "t": "quote",
+        "text": "Vücudumuzda her şeyi bilen, bir bilgeyle yaşıyoruz. BAĞIRSAK…"
+      },
+      {
+        "t": "p",
+        "text": "Bağırsakların ikinci beyin olduğunu artık duymayan yoktur diye tahmin ediyorum. Fakat gerçek bundan da öte. Bağırsaklar bizzat ruh sağlığının kendisi aslında. Bağırsaklarımız nasıl çalışıyorsa hayatı da öyle yaşıyoruz. Bazen dengesiz (IBS), bazen kontrolsüz (ishaller), bazen aşırı kontrollü (kabızlık), bazen de hiç ne yaptığımızın farkında olmayarak…"
+      },
+      {
+        "t": "p",
+        "text": "Hücre hücre bakacak olursak, aslında büyük ölçüde bakterilerden oluştuğumuzu söyleyebiliriz. Vücudumuzda bulunan çoğu bakteri bağırsaklarımızda yaşarlar. Bu bağırsak “mikrobiyomu” sindirim sağlığımızın durumunu belirler ve beynimizin süreçlerini etkiler."
+      },
+      {
+        "t": "p",
+        "text": "Stres altında olduğunuzda, bağırsaklarınızda bakteri toplulukları daha az çeşitlenir ve bağırsaklar, daha fazla sayıdaki zararlı bakteriler tarafından ele geçirilir. İrritabl bağırsak sendromu ve iltihaplı bağırsak hastalıkları gibi problemler, stresle tetiklenir."
+      },
+      {
+        "t": "p",
+        "text": "Duygusal sıkıntı, zihinsel stres ve travma, bağırsaktaki kötü bakterilerin daha fazla çoğalmasına neden olur ve bağırsaklardaki bu kötü bakteriler ise kişinin kötü ruh hali, anksiyete, depresyon, huzursuzluk ve stres karşısında daha az dirençli olabilmesine yol açar."
+      },
+      {
+        "t": "p",
+        "text": "Günlük hayatta hissettiğimiz duygular bağırsaklarımızı derinden etkiler. Bağırsak yapısı gereği “tutma ve bırakma” görevi görürler. Bu işi yaparken hem bedende salgılanan duygusal hormonlardan etkilenirler, hem de ruh halini etkileyecek hormonlar salgılarlar. Bağırsaklarımızın çalışma ritmi bize duygularımız hakkında — hatta çoğu zaman fark etmediğimiz duygular hakkında — önemli bilgi verir."
+      },
+      {
+        "t": "p",
+        "text": "Hayatta ne kadar güvendeyiz? Güvende hissetmek, korkmamak; hayat ritmimiz ve bağırsak ritmimiz için son derece önemlidir. Ne kadar güvende hissediyorsak o kadar “bırakabiliriz”. Güvende hissettiğimizde “kontrol” etme ihtiyacımız azalır. Güvende hissettiğimizde hayat içinde “an”da kalarak, yaşamın ritmine kapılırız. Bağırsaklarımız da tam olarak böyle çalışır. Yoğun korku ve kaygı yaşıyorsak, güvende hissetmiyorsak bağırsaklar da “bırakma” işlevini yerine getirirken zorlanır."
+      },
+      {
+        "t": "p",
+        "text": "Hayat üzerinde “an”da değil, tam tersi olarak savruluyorsak; bizimle ilgili olmayan bir sürü sürecin içindeysek, kendimizi “güçsüz, yetersiz” hissediyorsak, rüzgârda savrulan bir yaprak gibi yaşıyorsak bağırsaklarımız da tam böyle çalışır: “aşırı derecede bırakarak — kontrolsüz”…"
+      },
+      {
+        "t": "p",
+        "text": "Yapılan araştırmalar çocukluk döneminde gerçekleşen ve öngörülemeyen kronik stresin, bedenin kendi içinde düşük dereceli bir iltihaplanma sürecini tetiklediğini ortaya çıkarmıştır. Dengesiz ebeveyn tutumu, evde yapı ve sınırların net olmaması, çocuğun kendini güvende hissetmemesi, ani hayat değişimleri, düzensiz hayat vb. gibi durumlar bedenin iltihap yapmasına sebep olmaktadır. Özellikle bağırsak iltihapları günlük hayatı son derece zorlaştıran, hayat kalitesini bozan süreçlerdir."
+      },
+      {
+        "t": "p",
+        "text": "Özetle bağırsak sağlığımız ruh sağlığımızdır. Hayat boyunca hatırlamadığımız, anlamlandıramadığımız pek çok şey vardır; tüm geçmişi anlamak, bugünü şifalandırır. Bilmediğimizi düşündüğümüz her şey için bedene bakmak, onu dinlemek yeterlidir."
+      }
+    ]
+  },
+  {
+    "slug": "guvende-hissetmek-ve-bagirsak-isleyisi",
+    "title": "Güvende Hissetmek ve Bağırsak İşleyişi",
+    "category": "makaleler",
+    "excerpt": "Tam olarak güvende hissedebilir miyiz? İçinde bulunduğumuz dünyada, içinde bulunduğumuz bedende? Evrende küçücük bir detayken, hayatta çoğu şey üzerinde kontrolümüz yokken…",
+    "date": "9 Mayıs 2021",
+    "readTime": 6,
+    "theme": "deep",
+    "variant": 1,
+    "content": [
+      {
+        "t": "p",
+        "text": "Tam olarak güvende hissedebilir miyiz? İçinde bulunduğumuz dünyada, içinde bulunduğumuz bedende? Evrende küçücük bir detayken, hayatta çoğu şey üzerinde kontrolümüz yokken, duygularımıza çok uzakken içinde bulunduğumuz bedende ve dış dünyada güvende hissetmek çok zor."
+      },
+      {
+        "t": "p",
+        "text": "Hayatlarımızı belirsizliğe bırakarak yaşamak zorundayız. Beş dakika sonra ne olacağını bilmiyoruz, içinde bulunduğumuz fiziki koşullar gittikçe zorlaşıyor. Tutunabileceğimiz tek şey “an”. Sadece şu anda varız, sadece şu anda yaşıyoruz ve tam olarak an’ı biliyoruz. Bedenimizin de tam şu an’da olması fiziksel sağlığımız için çok önemli."
+      },
+      {
+        "t": "p",
+        "text": "Bedenin bir hafızası olduğunu artık biliyoruz. Beden hafızasında bir zaman kavramı yok. Bedenimiz tüm zamansızlık içinde biriktirdikleri ile şu an’da yaşıyor. Tüm sistemimiz buna göre çalışıyor, sağlığımız bu doğrultuda şekilleniyor. Beden duyguları hapsediyor, duygular bedende var oluyor. Duygularımız bedenimiz oluyor. Bağırsaklarımızın çalışma ritmi de tam olarak buralarda sağlıklı çalışmaya veya bozulmaya başlıyor. Özellikle bağırsak sağlığı için bedenimiz, duygusal dünyamızda “güvende hissetmemiz” çok önemli. Lütfen güvende hissetmeyi sadece fiziksel tehdit olarak düşünmeyin. Tüm fiziksel koşullar sağlandığında bile insan kendini güvende hissetmeyebiliyor. Son derece güvenlikli evlerde, korumalı sitelerde bile insanlar korku yaşıyorlar. Peki bunun sebebi gerçekten fiziksel bir korku mu? Hayır."
+      },
+      {
+        "t": "p",
+        "text": "Bastırdığımız duygular, üzerini kapattığımız meseleler “korku” olarak arka planda bedenimizi sarmaya başlıyor. Korku, çok hareketli bir duygudur. Bazen hiç korktuğumuzun farkında bile olmuyoruz çünkü korku farklı duyguların arkasına saklanabiliyor. “Korku” bağırsak sağlığını bizzat etkileyen duygulardan."
+      },
+      {
+        "t": "p",
+        "text": "Bağırsaklarımızın en temel işlevi olan “bırakma” eylemi için bedenin güvende olması gerekir. Şöyle düşünelim bir ceylan olsun. Kendi doğal yaşam alanındayken bir anda aslan tehlikesi hissetsin. Bütün bedeni kaçması için hazırlık yapacaktır ve bu hazırlık içinde bırakma-dışkılama yoktur. Tehlike ne zaman geçerse, beden ne zaman sakinleşir ve kendini güvende hissederse o zaman bırakma-dışkılama eylemi gerçekleşecektir. Dışkılama bedenimiz için rahatlama-bırakma eylemidir bu sebeple güvende hissetmek çok önemlidir. Ya da kendi günlük hayatlarımıza bakalım. Bazı insanlar farklı evlerde veya yerlerde dışkılama yapamazlar. Bu ister uzun bir tatil isterse kısa bir misafirlik görüşmesi olsun. Bu görüşmelerde güvende değiller mi? Sorarsak elbette güvendeyiz, her şey yolunda diyeceklerdir fakat biraz önce bedenin zaman ve mekândan bağımsız bir sistemi olduğunu konuştuk. Bu sebeple dışkılayamama eylemi tam şu andaki tatille ilgili değil, kişinin kendi duygusal sistemiyle alakalıdır. Bedenimiz bizim tatilde olduğumuzu bilmez, bunu farklı bir habitat var ve bir tehlike olarak algılar. Bu sebeple duygularımız ne kadar dengedeyse, kendi duygusal dünyamızda arka plandaki duygularımızla ne kadar iş birliği içindeysek, ne kadar farkındalıkla yaşıyorsak o kadar güvendeyiz. Bağırsaklarımız da o kadar “bırakabilir”…"
+      },
+      {
+        "t": "p",
+        "text": "“Korkudan altına yapmak” durumunu duymuşsunuzdur. Bunu en çok çocuklarda görürüz. Kontrol edilemeyen, stres eşiğini aşan “korku” anında beden üzerindeki kontrolümüzü kaybederiz, kaslar kendilerini bırakır. Burada artık bedenin kendini koruma içgüdüsü yok olur. Tam bir “donma” hali gerçekleşir ve bir anda boşalmalar başlar. Bu sebeple korkudan altına yapma durumu en çok çocuklarda görülür. Çünkü bu küçük bireyler zaten kas kontrolünü tam yapmazlar ve kendilerini içgüdüsel olarak korumayı tam olarak bilmezler. Yetişkinler içinse ciddi fiziksel ve duygusal korku anında bütün kas kontrolü kaybolur…"
+      },
+      {
+        "t": "quote",
+        "text": "Bağırsaklarımız öngörülemeyen ve kronik korku duygusundan hoşlanmaz."
+      }
+    ]
+  },
+  {
+    "slug": "sucluluk-yetersizlik",
+    "title": "Suçluluk – Yetersizlik",
+    "category": "makaleler",
+    "excerpt": "Suçluluk nedir? Tek başına bir duygu mudur? Yoksa içinde yetersizliği, çaresizliği, korkuyu barındıran insanın kendine her fırsatta darbe vurduğu duygular bütünü müdür?",
+    "date": "16 Mayıs 2021",
+    "readTime": 6,
+    "theme": "terra",
+    "variant": 2,
+    "content": [
+      {
+        "t": "p",
+        "text": "Suçluluk nedir? Tek başına bir duygu mudur? Yoksa içinde yetersizliği, çaresizliği, korkuyu barındıran insanın kendine her fırsatta darbe vurduğu duygular bütünü müdür?"
+      },
+      {
+        "t": "p",
+        "text": "Suçluluk bunu sürekli yanında taşıyan bir insan için hayatın tamamıdır. Diğer duygulardan farklıdır suçlu hissetmek. Sadece hissedilip geçilen bir duygu değildir. Lütfen bir konuda anlaşalım. Herkes ara ara suçlu hisseder fakat bunun hayata yayılması, ilk öncelik duygu olması çok farklı bir şey. Burada bahsedeceğimiz de tam bu hayata yayılan, her alanda suçlu hissetmek…"
+      },
+      {
+        "t": "p",
+        "text": "Suçluluk bunu sürekli hisseden insan için bütün hayata yayılır, tercihlere yayılır."
+      },
+      {
+        "t": "quote",
+        "text": "Suçluluğun kardeşleri vardır. En yakını yetersizliktir, dostu korkudur, yoldaşı fazla sorumluluktur, sığındığı liman hayır diyememek-sınır çizememektir."
+      },
+      {
+        "t": "p",
+        "text": "“Kendi aramızda konuştuğumuz bende özgüven eksikliği var, ben yapamam ki, hayır diyemiyorum, hayır dememek için her şeyi yapıyorum, benim buna hakkım yok, ben herkese kucak açıyorum, herkese verici davranırım, o üzülmesin diye her şeyi yaptım, ben başkalarını mutlu ederek mutlu olurum, başkalarının yapması gereken şeyleri bile ben üzerime alıyorum” ve daha niceleri… Ortada bir suç, bir hata varsa o her zaman size mi ait? Bu cümleler sizin için tanıdık mı?"
+      },
+      {
+        "t": "p",
+        "text": "Bir insan bu kadar yaşanması zor bir duygu bütünü hale nasıl geldi? Sorunun cevabı bugünde değil, çok daha eskilere uzanıyor…"
+      },
+      {
+        "t": "p",
+        "text": "Asıl önemli soru bu galiba. Beraber en temele bakalım…"
+      },
+      {
+        "t": "p",
+        "text": "Hayata gözlerini yeni açmış küçücük bir bebek var oluşunun değerli olduğunu hissetmeli. Yeni yeni ayaklanmış küçük bir çocuk belli sınırlar içerisinde özgür olduğunu hissedebilmeli. Çocuk hem fiziksel olarak hem ruhsal olarak kendini güvende hissetmeli. Dış yaşamdaki ve ev yaşamındaki olumsuzlukların onunla ilgili olduğunu düşünmemeli. Çocuğun hayatındaki tüm yetişkinlerin kendi sorumluluklarını üstlenmeleri gerekmektedir. Bir birey olarak çocuğun “görülmesi”, “duyulması”, “duygusal ve fiziksel ihtiyacının” karşılanması gerekir."
+      },
+      {
+        "t": "p",
+        "text": "İşte tam buralarda suçluluk oluşmaya başlıyor. Küçük bir çocuk ebeveyni tarafından duygusal ve fiziksel olarak ihmal ediliyorsa, yaşına uygun olarak uyaran verilmiyorsa, bireyselliğine saygı duyulmuyorsa hatta birey olarak görülmüyorsa suçlu hisseder. Bir bebeğe, çocuğa “değerli” hissettirmemek onu suçlu hissettirir. Değerli hissetmemekle suçluluk çok farklı duygular gibi görünse de suçluluk dediğimiz duygu aslında “içe dönmüş öfke”dir. İçe dönmüş öfke kişinin her süreçte kendine öfkelenmesi, hata yapma esnekliğini kendine sunmaması, değerli hissetmemesidir. Hepsi birleşince suçluluk ortaya çıkar. Suçlu hissetmek bir evse bu evin temeli içe dönmüş öfkedir. Evdeki eşyalar ise biraz önce saydığım duygulardır."
+      },
+      {
+        "t": "p",
+        "text": "Hayata yayılan suçluluk kişinin önce kendi değerini öldürür. Kişi kendi hayatındaki en değersiz şey haline gelirken, ötekiler yüceltilmeye başlar. Öfke ötekine çıkmaz, ortada sinirlenecek bir şey olursa kişi kendine kızar. Suçluluk bütün sınırları ortadan kaldırır. Hayır demek, sınır çizmek zorlaşır bazen imkânsız hale gelir. Suçluluk bedene de yansır. Beden gittikçe değersizleşir, kişinin kendi gözünde çirkinleşmeye başlar. Beslenme bozulur, aşırı yemeler veya hiç yememe durumları oluşur. İnsan kendine değer verdiğinde, öfkeyi kendi içine döndürmekten vazgeçtiğinde hem kendi bedenini besler hem de ruhunu."
+      },
+      {
+        "t": "p",
+        "text": "Suçluluk öyle kolay bir duygu değildir."
+      }
+    ]
+  },
+  {
+    "slug": "olumsuz-duygulari-yemek-ya-da-yememek",
+    "title": "Olumsuz Duyguları Yemek ya da Yememek — İşte Bütün Mesele Bu!",
+    "category": "makaleler",
+    "excerpt": "Olumsuz duygular denilince aklınıza neler geliyor? Sizin için deneyimlenmesi, yaşantılanması veya üzerine konuşulması en zor duygular hangisi?",
+    "date": "23 Mayıs 2021",
+    "readTime": 4,
+    "theme": "sand",
+    "variant": 3,
+    "content": [
+      {
+        "t": "p",
+        "text": "Olumsuz duygular denilince aklınıza neler geliyor? Sizin için deneyimlenmesi, yaşantılanması veya üzerine konuşulması en zor duygular hangisi?"
+      },
+      {
+        "t": "p",
+        "text": "Bu duyguları “olumsuz” yapan şey nedir? Bunlar üzerine konuşalım…"
+      },
+      {
+        "t": "p",
+        "text": "Herkes için “olumsuz duygu” farklı şekilde algılanır. Kimi öfkeyi olumsuz bulur, kimi üzüntüyü, kimi kaygıyı, belki mutluluğu…"
+      },
+      {
+        "t": "p",
+        "text": "Duygular bedenimizdeki organlarımız gibidir. Hepsinin çok temel işlevleri ve anlamları vardır. Kalbiniz olmadan yaşayamayacağınız gibi olumsuz olarak deneyimlediğiniz duyguları da yaşantılamadan “yaşayamazsınız”. Tabi ruhsal olarak. Ne demektir bu? Olumsuz olarak adlandırdığınız duyguları deneyimlemek istememek demek, kalbinizin atışını durdurmaya çalışmanız, bağırsaklarınızın işleyişini bozmaya çalışmanız demektir. Bedenimiz nasıl bir ahenk içinde çalışıyorsa, ruhumuz da aynı işleyişe sahiptir. Her duygunun beyinde, bedende ve bilinçdışında bir görevi vardır. Deneyimlemekten kaçtığımız olumsuz duygular ruhumuzun işleyişini bozmaya başlar. Bizler farkında olarak veya olmayarak bu bozulan işleyişe karşı bir şeyler yapmaya çalışırız. Başımız ağrıdığında ağrı kesici alabiliriz, temiz hava almayı deneyebiliriz, su içmeyi düşünebiliriz, tatlı yemek isteyebiliriz. Gördüğünüz gibi baş ağrısını dindirmek için birçok farklı yol var ve her yol aynı şekilde işlevsel değil. Olumsuz duyguları yaşamamak için de birbirinden farklı yollar deneriz fakat genellikle bunların farkında olmayız çünkü bilinç seviyesinde değildir."
+      },
+      {
+        "t": "p",
+        "text": "Duygusal yeme atakları olumsuz duyguların deneyimlenmesi için en çok başvurulan “işlevsiz” yollardan biridir. Kişi genelde bunu “stres yapınca yemek yerim” şeklinde ifade etse de arka planda stresten öte çok daha farklı duygular ve dinamikler söz konusudur."
+      },
+      {
+        "t": "p",
+        "text": "Karbonhidrat, şeker ve yağ oranından fazlasıyla zengin besinlerin beyinde salgıladığı hormonlar sayesinde deneyimlenmekten çekindiğimiz duygular bastırılır. Bu bastırma süresi kısa sürelidir. 5 dakika ile bir saat arasında değişir. Tam bu noktada hormon etkisi geçtiğinde kişi tekrardan bir yeme atağı geçirmeye başlar. Arkasından büyük bir suçluluk hissi de genellikle eşlik eder… Olumsuz duyguları deneyimlemekten kaçmak ve bastırmak, duygusal yeme atağı gibi pek çok işlevsiz baş etme yöntemlerini getirir."
+      }
+    ]
+  },
+  {
+    "slug": "ilk-bag",
+    "title": "İlk Bağ",
+    "category": "makaleler",
+    "excerpt": "“Ben kimseye bağlanamıyorum”, “ben herkese hemen bağlanıyorum”, “ait hissetmiyorum hiçbir yere”… Bağlanma hayatımızın her alanını derinden etkiler.",
+    "date": "30 Mayıs 2021",
+    "readTime": 6,
+    "theme": "teal",
+    "variant": 4,
+    "content": [
+      {
+        "t": "p",
+        "text": "“Ben kimseye bağlanamıyorum”, “ben herkese hemen bağlanıyorum”, “ait hissetmiyorum hiçbir yere” vb. gibi söylemleri duymuşsunuzdur veya üzerine o kadar çok dizi-film çekildi ki mutlaka izlemişsinizdir. Nedeni üzerine de az çok fikriniz vardır. “Bağlanma bozukluğu” diye bağırır birçok kaynak. “Bende bağlanma bozukluğu var” diye de espri yaparız hatta. Kulağa çok önemli gelmeyen bir kavram gibi geliyor fakat öyle derin bir mevzu ki “bağlanma” hayatımızın her alanını derinden etkiler. İş yaşantımızı, partnerimizle olan ilişkimizi, çocuklarımızla olan ilişkimizi, hayatta köklenmemizi, yaşayış şeklimizi, bedenimizi, kilo durumumuzu vb. alanı çok derinden etkiler. Bu kadar önemli mesele olan “bağlanma” nasıl gelişiyor veya sağlıklı gelişemiyor ona bakalım."
+      },
+      {
+        "t": "p",
+        "text": "Bağlanmanın ilk basamakları henüz anne rahmine bile düşmeden gelişiyor aslında. Annemizin kendi annesi ile olan bağlanması nasılsa, kendi yaralarını iyileştirmeden bizimle de öyle bağ kuracaktır. Daha sonraki kısım gebelik sürecini planlarken oluyor. Tabii ki planlıysa… Gebeliğe psikolojik hazırlık bu anlamda çok önemli. Bir bebeği arzulamak, onu zihinde tasarlamak, üzerine konuşmak, fiziksel ve psikolojik olarak hazırlık yapmak; benim yazarken sizin de okurken yüzünüzde hafif bir gülümseme olmuştur illa ki… Beden kayıtlarımız bütün bunları tek tek yazıyor ve bebekler bu beden kayıtlarının tam içine düşüyorlar. Biliyorlar dolayısıyla isteniyorlar mı? Arzulanıyorlar mı? Bekleniyorlar mı? Bağlanma süreci ilmek ilmek işlenmiş oluyor."
+      },
+      {
+        "t": "p",
+        "text": "Sonra gebelik süreci geliyor. Bebek, annenin rahminde kısa bir süreliğine misafir. Bu misafir her şeyi duyuyor, hissediyor, fikir sahibi oluyor. Kalıcı olarak geleceği ortam hakkında, ebeveynleri hakkında çok önemli bilgiler ediniyor. Bu bilgiler bağlanma sürecine önemli katkılarda bulunuyor. Annenin bebeği ile sesli bir şekilde konuşması, ona seslenmesi bebek için öyle önemli bir detay ki… Yabancı bir yerde misafirsiniz ve ev sahipleri sizinle sohbet ediyorsa, sizi arzuluyorsa, ortam güvenli ve keyifliyse onlarla sıcacık bağlar geliştirirsiniz. Anneniz gebelik boyunca sizinle hiç konuşmuyorsa, ortam güvensiz, sesler huzursuz, belki şiddet varsa korkar, o eve gelmek istemez, huzursuz olursunuz. Korkulu bir bağlanma oracıkta hemen gelişir."
+      },
+      {
+        "t": "p",
+        "text": "Diğer önemli durum ise “doğum”… Doğum bir yolculuktur. Bebeğin evine yolculuğu, bebeğin ailesine yolculuk. Doğum bir şölendir, doğum yeryüzündeki en mucizevi olaydır. Acaba bu yolculuğumuz nasıl oluyor? Bu yolculukta bebeğe, anneye saygı duyuluyor mu? Bebeği bu yolculuğa çıkarken hissettikleri çok önemli. Ortamda nasıl bir hava var? Sesler nasıl? Mahremiyet var mı? Her memeli mahremiyet olan bir ortamda doğmak ve doğurulmak ister. Sevgi var mı bu yolculukta? Eve giden uçakta hostesler güler yüzlü mü? Yolcularla konuşuyor mu? Onlara güzel yiyecek-içecek ikram ediyor mu? Bebek için bu yolculuktaki bindiği öyle önemli ki. Doğum ekibi nasıl? Güler yüzlü mü? Anneyi ve yolcu bebeği sevgi ile karşılıyor mu? Yolcu iner inmez annesiyle buluşturulacak mı? Ne kadar büyük kaygılar küçücük bir bebek için ve ne kadar önemli meseleler bebek için, bebeğin hayatta-annesiyle bağ kurması için."
+      },
+      {
+        "t": "quote",
+        "text": "Kurulamayan her bağ, güvenli bağlanamayan her bebek önce kendi için sonra toplum için derin bir yara…"
+      }
+    ]
+  },
+  {
+    "slug": "gebelik-surecinde-ve-dogum-aninda-psikolojik-destek",
+    "title": "Gebelik Sürecinde ve Doğum Anında Psikolojik Destek",
+    "category": "freyada-dogum",
+    "excerpt": "Gebelik sürecinde psikolojik destek ülkemiz için yeni bir kavramdır. Son dönemdeki çalışmalar gebelik döneminde ve doğum zamanında psikolojik destek almanın, doğum sonrası depresyon oranlarını ciddi şekilde azalttığını göstermektedir.",
+    "date": "31 Ocak 2023",
+    "readTime": 4,
+    "theme": "terra",
+    "variant": 0,
+    "content": [
+      {
+        "t": "p",
+        "text": "Gebelik sürecinde psikolojik destek ülkemiz için yeni bir kavramdır. Son dönemdeki çalışmalar gebelik döneminde ve doğum zamanında psikolojik destek almanın, doğum sonrası depresyon oranlarını ciddi şekilde azaltmakta ve anne-bebek bağlanmasını kolaylaştırmakta olduğunu göstermektedir."
+      },
+      {
+        "t": "p",
+        "text": "Dünyaya bir çocuk getirmek kişinin kendi travmalarının, çocukluk yaşantılarının tekrardan gün yüzüne çıkmasına neden olur. Bu yaşantılar genelde “bilinç seviyesinde” gün yüzüne çıkmamaktadır. “Bilinçdışı” unsur dediğimiz dolaylı süreçlerle hayatımızı etkiler. Bazen bedensel olarak rahatsızlık yaratır, bazen rüyalar ile karşımıza çıkar, bazen ani duygu değişimleri gibi pek çok açıdan hayatımızda varlığını sürdürür. Ebeveyn olma yolculuğunda bize ait olmayan pek çok kıyafet üzerimizde vardır, bizi terletir, ağırlık yapar, yorar. Bu süreçteki psikolojik destek bize ait olmayan kıyafetlerin çıkartılması, travmaların çalışılması ve bebekle sağlıklı bağ kurmayı içerir."
+      }
+    ]
+  },
+  {
+    "slug": "dogum-surecimiz-hayatimizin-geri-kalanini-belirliyor",
+    "title": "Doğum Sürecimiz Hayatımızın Geri Kalanını Belirliyor",
+    "category": "freyada-dogum",
+    "excerpt": "Bu hayata gelirken nasıl bir yolumuz oldu acaba? Arzulanan bir bebek olarak mı geldik yoksa sürpriz bir bebek olarak mı? Keşke bir önemi olmasaydı…",
+    "date": "31 Ocak 2023",
+    "readTime": 5,
+    "theme": "rose",
+    "variant": 1,
+    "content": [
+      {
+        "t": "p",
+        "text": "Bu hayata gelirken nasıl bir yolumuz oldu acaba? Arzulanan bir bebek olarak mı geldik yoksa sürpriz bir bebek olarak mı? Belki içinizden “ne önemi var canım” diyorsunuzdur? Keşke bir önemi olmasaydı…"
+      },
+      {
+        "t": "p",
+        "text": "Bulunduğunuz şehirden bambaşka bir ülkeye gideceksiniz. Dilini bilmediğiniz, insanlarını tanımadığınız bir ülkeye. Hiçbir fikriniz yok bu ülkeyle ilgili. Sadece bir ailenin yanında kalacağınızı biliyorsunuz, hepsi bu."
+      },
+      {
+        "t": "p",
+        "text": "İlk seçenek şu; bu aile sizin gelmenizi dört gözle bekliyor. Sizi merak ediyor, dilinizi konuşmak için birkaç kitap karıştırıyor, videolar izliyor, kurslara gidiyor. Çok heyecanlılar. Ara ara size telefon açıyorlar, dilleri döndükleri kadar sizinle konuşuyorlar. Yola çıkarken nasıl hissedersiniz? Bu ailenin yanına giderken peki?"
+      },
+      {
+        "t": "p",
+        "text": "İkinci seçenek şu; bir ailenin yanına gideceksiniz fakat sizinle hiç iletişim kurmadılar. Siz onların dilini bilmiyorsunuz, onlar da sizin. Tabi hazırlık yapıyorlar elbette. Evlerine yeni birileri gelecek sonuçta fakat bu bilgi onlar için sürpriz olmuş. Daha sonra alışmışlar bu fikre ve sizi kabul etmişler. Bu aileye giderken nasıl hissedersiniz?"
+      },
+      {
+        "t": "p",
+        "text": "Doğum da tam böyledir işte. Bizler de dilini hiç bilmediğimiz bir ülkeye ve aileye geldik. Bizi ne kadar arzuladıkları, bizimle yolculuk sürecinde iletişim kurup kurmadıkları, yolculuğun nasıl geçtiği, bizim için çaba gösterip-göstermedikleri öyle önemli ki. Önemli çünkü bu ülke, aile ve ev hakkındaki ilk izlenimimiz. Kendimizi güvende hissetmemizi, ortama ve aileye olan bakışımızı, psikolojimizi ve bedenimizi derinden etkiler."
+      },
+      {
+        "t": "p",
+        "text": "Dünya’ya gelmiş her bebeğin “güvene” ihtiyacı vardır. İlk güven duygusu anne rahmindeyken başlar. Bebek, anne rahmindeyken dış ortamı duyar, hisseder; annesi-ailesi ve ev hakkında bilgi edinir. Annesinin, diğer ev sahiplerinin onunla iletişimi çok önemlidir, böylece bebek kendini güvende hisseder. Ebeveyni ile ilgili bağ geliştirir. Hayat ile olan bağımız anne rahmindeyken başlar. Dünya’ya gelirken yaşadığımız yolculuk sonraki süreçleri derinden etkiler."
+      },
+      {
+        "t": "p",
+        "text": "Her bebeğin çok keyifli bir yolculuğu olmasını dilerim…"
+      }
+    ]
+  },
+  {
+    "slug": "lohusa-psikolojisi-ve-lohusaya-destek",
+    "title": "Lohusa Psikolojisi ve Lohusaya Destek",
+    "category": "freyada-dogum",
+    "excerpt": "Lohusa kelimesi Rumca dilinden Türkçe’mize geçmiştir. Lohusalık literatürde “annelik hüznü” olarak da geçmektedir. Ayrılıkla kavuşmanın iç içe yaşandığı cayır cayır bir dönemdir.",
+    "date": "31 Ocak 2023",
+    "readTime": 6,
+    "theme": "night",
+    "variant": 2,
+    "content": [
+      {
+        "t": "p",
+        "text": "Lohusalık psikolojisine geçmeden önce kelime anlamına bir bakalım. Lohusa kelimesi, dilimizde oldukça kullanılan kelimelerden birisidir. Lohusa, Rumca dilinden Türkçe’mize geçmiştir. TDK’ye göre lohusa kelimesi anlamı şu şekildedir: yeni doğum yapmış kadın demektir. Lohusalık literatürde “annelik hüznü” olarak da geçmektedir."
+      },
+      {
+        "t": "p",
+        "text": "Lohusalık, ayrılıkla kavuşmanın iç içe yaşandığı, bedenin inanılmaz derece hem fiziksel olarak hem de psikolojik olarak ateşlendiği, kadının yepyeni bir hayatın kucağına atladığı, yorulduğu, bilinçdışı süreçlerin ortaya çıktığı cayır cayır bir dönemdir. Bazen bir yas sürecini de içinde barındırır. Yeni bir hayata geçiş, eskiyi geride bırakmak demektir. Bazen lohusalık bir anlam kaybıdır. Tüm bu süreçlerde beden kendini onarmaya çalışır, hormonlar dans eder."
+      },
+      {
+        "t": "p",
+        "text": "Kolay değildir içeride bir bebek büyütmek ve önce ondan ayrılmak, sonra onunla tekrar kavuşmak… Doğum aslında bir ayrılık deneyimidir. İçeride büyüttüğünü dışarı çıkarmak için önce onu içeriden ayırmak gerekir. Kavuşmak için ayrılıkların gerektiği gibi…"
+      },
+      {
+        "t": "p",
+        "text": "Ayrılığın olduğu her yerde mutlaka hüzün vardır. Doğum bir kavuşma dahi olsa, annenin gebelikten ayrıldığı, içinde taşıdığı bebekten ayrıldığı, eski hayatından ayrıldığı, rutinlerinden ayrıldığı bir süreçtir. Her kadının bu ayrılık serüvenine karşı tepkisi farklı olacaktır. Bu sebeple taze annenin hüznünü kucaklamak ve onun duygularını anlamak için alan açmak çok önemlidir."
+      },
+      {
+        "t": "p",
+        "text": "Özellikle bizim kültürümüzde lohusa kadın tek başına bırakılmaz, etrafında, evinde ona destek olmak için pek çok kişi yer alır. Buralarda yeni hayatına adapte olmaya çalışan anne için “mahremiyet” çok hayatidir. Her alanda onun mahremiyetini düşünmemiz gerekir. Onun onayını almadan, rızasını sormadan bizler için iyilik dolu olsa bile pek çok şeyden uzak durmak önemlidir."
+      },
+      {
+        "t": "p",
+        "text": "Lohusaya destek için yapılan ve atılan çoğu adım aslında yeni anne için zorlayıcı olabilir. Bu sebeple pek çok şey hakkında uzun uzun düşünmek gerekir."
+      },
+      {
+        "t": "p",
+        "text": "Lohusa bir kadına sağlayabileceğimiz en önemli destek onun işlerini kolaylaştırmaktır, bebeğe bakmak değildir. Günlük işleri yapmak, yemek hazırlamak, belki evi toplamak gibi…"
+      },
+      {
+        "t": "quote",
+        "text": "Bebek ve bebek bakımı hakkındaki fikirlerimizi de kendimize saklamalıyız. Bebek hakkında iyi ve kötü yaptığımız her yorum taze anne için yaralayıcı olabilir…"
+      }
+    ]
+  },
+  {
+    "slug": "sevgili-ebeveyn",
+    "title": "Sevgili Ebeveyn",
+    "category": "freyada-dogum",
+    "excerpt": "Yeter miyiz? Diye düşündüğün her an, bir çocuk için önemli olan şeyin “koşulsuz sevgi” olduğunu bil.",
+    "date": "31 Ocak 2023",
+    "readTime": 4,
+    "theme": "terra",
+    "variant": 4,
+    "content": [
+      {
+        "t": "p",
+        "text": "Yeter miyiz? Diye düşündüğün her an, bir çocuk için önemli olan şeyin “koşulsuz sevgi” olduğunu bil."
+      },
+      {
+        "t": "p",
+        "text": "Nasıl davranmalıyım? Diye düşündüğün her an bir zamanlar çocuk olduğunu hatırla."
+      },
+      {
+        "t": "p",
+        "text": "Nasıl anlayacağım? Diye düşündüğün her dakika bedenindeki bilgiye güven."
+      },
+      {
+        "t": "p",
+        "text": "İhtiyaç duyduğun bilgi sende var. Bugün bir çocuk sahibi olmak için çıktığın yoldan çoktan geçtiğini, hatta o yolu bir çocuk olarak geçtiğini hatırla."
+      },
+      {
+        "t": "p",
+        "text": "Kendi yaralarını, kendi geçmişini hatırla. Asıl bilgi orada. Nasıl sevilmek istediğini, neye ihtiyacın olduğunu hatırla. Önce sen kendi geçmişindeki çocuğu gör, bil ve hatırla ki bugün bedeninde büyüttüğün şifalansın."
+      },
+      {
+        "t": "p",
+        "text": "Koşulsuz sevmeye hazırlan. Bir canlıyı bugün ve tüm gelecekte şefkatle, sımsıcak ve kabul ederek sevmeye hazırlan. Kim olacağını merak ederek, neyi sevip sevmeyeceğini merak ederek, onu arzuyla düşün. Tasarlama… Onu kendin için tasarlama. Sadece arzula. Bu arzu ve merak bedeninden bebeğine geçecek. Kalbini ona olan sevginle doldur. Bu sevgiyi bilerek gelecek sana. Lütfen bedenine yatırım yap. Senin bedenine yaptığın sağlıklı her yatırım bebeğin için şifa olacak. Ve ona sor. Ne istediğini, nasıl bir doğum istediğini mutlaka ona sor. Bu onun doğumu, bu onun doğum günü olacak…"
+      }
+    ]
+  }
+]
