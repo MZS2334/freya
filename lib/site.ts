@@ -14,7 +14,7 @@ export const SITE = {
   foundedYear: 2026,
   instagrams: [
     { handle: 'freyapsikoloji', url: 'https://www.instagram.com/freyapsikoloji', label: '@freyapsikoloji' },
-    { handle: 'freayadadogum', url: 'https://www.instagram.com/freayadadogum', label: '@freayadadogum' },
+    { handle: 'freyadadogum', url: 'https://www.instagram.com/freyadadogum', label: '@freyadadogum' },
     { handle: 'psk.gulcinsanli', url: 'https://www.instagram.com/psk.gulcinsanli', label: '@psk.gulcinsanli' },
   ],
 } as const;
