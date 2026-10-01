@@ -6,11 +6,11 @@ import Faq from '@/components/Faq';
 import { CtaBand } from '@/components/Common';
 import { ArtIllustration } from '@/components/Art';
 import { ARTICLES, byCategory } from '@/lib/articles';
-import { SITE, VALUES, FIELDS, VIDEOS } from '@/lib/site';
+import { SITE, FIELDS, VIDEOS } from '@/lib/site';
 import {
-  IconArrow, IconBaby, IconCalendar, IconCheck, IconHeart,
-  IconLotus, IconPhone, IconPuzzle, IconSmile, IconTarget,
-  IconUsers, IconVideo, IconWallet, IconShield,
+  IconArrow, IconBaby, IconCalendar, IconCheck,
+  IconLotus, IconPhone, IconPuzzle, IconSmile,
+  IconUsers, IconVideo, IconShield,
 } from '@/components/Icons';
 
 export const metadata: Metadata = {
@@ -18,8 +18,6 @@ export const metadata: Metadata = {
   description:
     'Freya Psikoloji — çocuk, ergen ve yetişkinler için psikoterapi; oyun terapisi, grup terapisi, gebelikte psikolojik destek ve doğum psikolojisi. Göktürk / İstanbul.',
 };
-
-const VALUE_ICONS = { smile: IconSmile, heart: IconHeart, target: IconTarget, wallet: IconWallet };
 
 const QUOTES = [
   { text: 'Terapi gül bahçesi değildir, yeni bir kimlik inşasıdır.', source: 'Freya Psikoloji' },
@@ -69,7 +67,7 @@ export default function HomePage() {
               Size ait olmayan <em>kıyafetleri</em> birlikte çıkaralım
             </h1>
             <p className="hero__text">
-              Freya Psikoloji; çocuk-ergen terapileri, zeka ve gelişim testleri ve yetişkinlerle
+              Freya Psikoloji; yetişkin, çocuk-ergen terapileri, zeka ve gelişim testleri ve yetişkinlerle
               grup terapileri yürütmektedir. Terapi, bedeninizin ve ruhunuzun şifalandığı bir
               süreçtir.
             </p>
@@ -123,28 +121,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ DEĞER ŞERİDİ ============ */}
-      <section className="values-strip">
-        <div className="container">
-          <div className="values-strip__box reveal">
-            {VALUES.map((v) => {
-              const Icon = VALUE_ICONS[v.icon as keyof typeof VALUE_ICONS];
-              return (
-                <div className="value-item" key={v.label}>
-                  <div className="value-item__icon"><Icon /></div>
-                  <div>
-                    <strong>
-                      %{v.value}
-                    </strong>
-                    <span>{v.label}</span>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* ============ HAKKIMIZDA TEASER ============ */}
       <section className="section section--surface about-teaser">
         <div className="container about-teaser__grid">
@@ -161,7 +137,7 @@ export default function HomePage() {
             <span className="eyebrow">Hakkımızda</span>
             <h2>Ruhunuzu Duyan, Bilimle Beslenen Bir Yaklaşım</h2>
             <p className="lead">
-              Freya Psikoloji; çocuk-ergen terapileri, zeka ve gelişim testleri ve yetişkinlerle
+              Freya Psikoloji; yetişkin, çocuk-ergen terapileri, zeka ve gelişim testleri ve yetişkinlerle
               grup terapileri yürütmektedir. Aynı zamanda özel bir kurumda psikoloji öğrencilerine
               alanla ilgili eğitimler vermekte ve terapist yetiştirmektedir.
             </p>
@@ -194,8 +170,7 @@ export default function HomePage() {
         <div className="container">
           <div className="section-head section-head--center reveal">
             <span className="eyebrow eyebrow--center">Yöntemlerimiz</span>
-            <h2>Size Özel Tasarlanan Terapi Yolculuğu</h2>
-            <p>Her danışanın hikâyesi biriciktir. İhtiyacınıza göre bilimsel temelli yöntemlerle yanınızdayız.</p>
+            <h2>Her danışanın hikâyesi biriciktir. İhtiyacınıza göre bilimsel temelli yöntemlerle yanınızdayız.</h2>
           </div>
 
           <div className="services__grid">
@@ -406,30 +381,6 @@ export default function HomePage() {
                 Tanıyın <IconArrow />
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ============ İSTATİSTİKLER ============ */}
-      <section className="section stats">
-        <div className="container">
-          <div className="section-head section-head--center reveal">
-            <span className="eyebrow eyebrow--center" style={{ color: '#c9a86a' }}>Sayılarla Biz</span>
-            <h2 style={{ color: '#fff' }}>Danışanlarımızın Yanındayız</h2>
-          </div>
-          <div className="stats__grid">
-            {VALUES.map((v, i) => {
-              const Icon = VALUE_ICONS[v.icon as keyof typeof VALUE_ICONS];
-              return (
-                <div className="stat reveal" data-delay={i} key={v.label}>
-                  <div className="stat__icon"><Icon /></div>
-                  <div className="stat__num">
-                    <span>{v.value}</span><sup>%</sup>
-                  </div>
-                  <div className="stat__label">{v.label}</div>
-                </div>
-              );
-            })}
           </div>
         </div>
       </section>

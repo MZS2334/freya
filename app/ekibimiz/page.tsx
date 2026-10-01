@@ -42,7 +42,7 @@ const CRED_ICONS = { grad: IconGrad, sparkle: IconSparkle, shield: IconShield, b
 
 export default function EkibimizPage() {
   const detail = [
-    'Çocuk-ergen terapileri, zeka ve gelişim testleri ve yetişkinlerle grup terapileri yürütmektedir. Aynı zamanda özel bir kurumda psikoloji öğrencilerine alanla ilgili eğitimler vermekte ve terapist yetiştirmektedir.',
+    'Yetişkin, çocuk-ergen terapileri, zeka ve gelişim testleri ve yetişkinlerle grup terapileri yürütmektedir. Aynı zamanda özel bir kurumda psikoloji öğrencilerine alanla ilgili eğitimler vermekte ve terapist yetiştirmektedir.',
     'Çocuklarla 12 yaşına kadar “oyun terapisi” ile çalışmaktadır. Ergenlerle dürtü kontrol bozuklukları, aile içi iletişim sorunları, patolojik durumlar üzerine çalışmakta olup aynı zamanda yetişkinlerle özel çalışma ve uzmanlık alanı olan yeme bozuklukları, duygusal yeme, obezite üzerine grup terapileri ve bireysel terapiler yürütmektedir.',
     'Yetişkinlerin tıbbi nedenlerle açıklanamayan “psikosomatik” hastalıkları üzerine psikodrama tezi yazmış ve bu alanda psikolojik destek vermektedir. Panik atak, bedensel ağrılar, egzama, baş dönmesi vb. gibi durumların altında yatan travmalar ve psikolojik nedenler üzerine çalışmalarını yürütmektedir.',
     'Gebelerle “anne-bebek / baba-bebek bağlanması”, doğuma hazırlık eğitimleri, gebelik sürecinde psikolojik destek üzerine çalışmaktadır.',

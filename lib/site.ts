@@ -2,7 +2,7 @@ export const SITE = {
   name: 'Freya Psikoloji',
   tagline: 'Psikolojik Danışmanlık Merkezi',
   description:
-    'Freya Psikoloji; çocuk-ergen terapileri, zeka ve gelişim testleri ve yetişkinlerle grup terapileri yürüten, doğum psikolojisi alanında uzmanlaşmış bir psikolojik danışmanlık merkezidir.',
+    'Freya Psikoloji; yetişkin, çocuk-ergen terapileri, zeka ve gelişim testleri ve yetişkinlerle grup terapileri yürüten, doğum psikolojisi alanında uzmanlaşmış bir psikolojik danışmanlık merkezidir.',
   phone: '(0 552) 604 31 07',
   phoneHref: '+905526043107',
   email: 'r.gulcinsanli@gmail.com',

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { PageHero, CtaBand } from '@/components/Common';
-import { ArtIllustration } from '@/components/Art';
 import { SITE, VALUES } from '@/lib/site';
 import { IconArrow, IconCheck } from '@/components/Icons';
 
@@ -21,37 +20,46 @@ export default function HakkimizdaPage() {
       />
 
       <section className="section section--surface about-teaser">
-        <div className="container about-teaser__grid">
-          <div className="about-teaser__visual reveal">
-            <div className="about-teaser__photo">
-              <ArtIllustration theme="teal" variant={2} />
-            </div>
-            <div className="about-teaser__exp">
-              <strong>2017</strong>
-              <span>Psikodrama eğitiminden beri sahadayız</span>
-            </div>
-          </div>
-          <div className="reveal" data-delay={1}>
+        <div className="container about-teaser__single">
+          <div className="reveal">
             <span className="eyebrow">Kurumsal</span>
             <h2>Freya Psikoloji Kimdir?</h2>
             <p className="lead">
-              Freya Psikoloji; çocuk-ergen terapileri, zeka ve gelişim testleri ve yetişkinlerle
-              grup terapileri yürütmektedir. Aynı zamanda özel bir kurumda psikoloji öğrencilerine
-              alanla ilgili eğitimler vermekte ve terapist yetiştirmektedir.
+              Bedeni, duyguları ve yaşam öyküsünü birlikte anlamak
             </p>
-            <p className="text-muted" style={{ marginBottom: 18 }}>
-              Çocuklarla 12 yaşına kadar “oyun terapisi” ile çalışmaktadır. Ergenlerle dürtü
-              kontrol bozuklukları, aile içi iletişim sorunları, patolojik durumlar üzerine
-              çalışmakta olup aynı zamanda yetişkinlerle özel çalışma ve uzmanlık alanı olan yeme
-              bozuklukları, duygusal yeme, obezite üzerine grup terapileri ve bireysel terapiler
-              yürütmektedir.
-            </p>
-            <ul className="check-list">
-              <li><IconCheck /> Zeka ve gelişim testleri</li>
-              <li><IconCheck /> Psikoloji öğrencilerine mesleki eğitim</li>
-              <li><IconCheck /> Terapist yetiştirme programları</li>
-              <li><IconCheck /> Psikosomatik süreçlerde psikolojik destek</li>
+            <div className="bio-text">
+              <p className="text-muted">
+                Freya Psikoloji olarak yetişkin, çocuk ve ergenlere yönelik psikolojik değerlendirme ve psikoterapi hizmetleri sunuyoruz. Her bireyin ihtiyaçlarını, yaşam deneyimlerini ve içinde bulunduğu koşulları dikkate alıyor; çalışmalarımızı bilimsel bilgi, mesleki etik ve şefkatli bir yaklaşım temelinde yürütüyoruz.
+              </p>
+              <p className="text-muted">
+                Yetişkinlerle bireysel psikoterapide kaygı, depresyon, travmatik deneyimler, ilişki güçlükleri, yas, özdeğer ve yaşam değişimleri gibi pek çok konuda çalışıyoruz. Terapiyi kişinin kendini, duygularını ve ilişkilerinde tekrar eden örüntüleri anlamasına; yaşadığı güçlüklerle baş etmenin yeni yollarını geliştirmesine alan açan bir süreç olarak görüyoruz.
+              </p>
+              <p className="text-muted">
+                Beslenme psikolojisi çalışmalarımızda yemekle kurulan ilişkiyi, duygusal yemeyi, yeme davranışındaki güçlükleri ve beden algısını ele alıyoruz. Kişinin beslenme deneyimini duyguları, ihtiyaçları, geçmiş yaşantıları ve bedeniyle kurduğu ilişki içinde anlamaya odaklanıyoruz.
+              </p>
+              <p className="text-muted">
+                Beden odaklı çalışmalarımızda beden terapisi ve somatik psikoterapi yaklaşımlarından yararlanarak bedensel duyumlara, duyguların bedendeki karşılıklarına ve stres karşısında oluşan tepkilere alan açıyoruz. Bireysel ve grup terapilerinde, kişinin ihtiyaçlarına uygun olarak psikodrama ve deneyimsel yöntemlerle de çalışıyoruz.
+              </p>
+              <p className="text-muted">
+                Çocuk ve ergenlerle yürüttüğümüz çalışmalarda gelişimsel, duygusal ve ilişkisel ihtiyaçları ele alıyor; gerektiğinde ebeveynlerle iş birliği yapıyoruz. Gelişim ve zekâ testleriyle değerlendirme süreçlerini destekliyor, elde edilen bulgular doğrultusunda ailelere geri bildirim ve rehberlik sunuyoruz.
+              </p>
+              <p className="text-muted">
+                Gebelik, doğum ve doğum sonrası dönemde ise anne ve ebeveyn ruh sağlığına yönelik psikolojik destek sağlıyoruz. Görüşmelerimizi Göktürk ofisimizde yüz yüze ve hizmetin niteliğine uygun olarak çevrim içi gerçekleştiriyoruz.
+              </p>
+            </div>
+            <h3 style={{ fontSize: 22, margin: '30px 0 4px' }}>Çalışma alanlarımız</h3>
+            <ul className="check-list" style={{ marginTop: 18 }}>
+              <li><IconCheck /> Yetişkinlerle bireysel psikoterapi</li>
+              <li><IconCheck /> Çocuk ve ergen psikoterapisi</li>
+              <li><IconCheck /> Gelişim ve zekâ testleri</li>
+              <li><IconCheck /> Beslenme psikolojisi ve beden algısı</li>
+              <li><IconCheck /> Beden terapisi ve somatik psikoterapi</li>
+              <li><IconCheck /> Psikodrama ve grup terapisi</li>
+              <li><IconCheck /> Gebelik, doğum ve doğum sonrası psikolojik destek</li>
             </ul>
+            <p className="text-muted" style={{ marginBottom: 26 }}>
+              Bebek psikoterapisi çalışmalarımızda bebeğin duygusal ve bedensel ihtiyaçlarını, ebeveynleriyle kurduğu bağ ve ilişki içinde ele alıyoruz. Bağlanma süreçleri ve erken dönemde yaşanan ilişkisel güçlükler üzerine ebeveynlerle birlikte çalışıyor; bebeğin gelişim dönemine ve ihtiyaçlarına uygun beden odaklı terapi yaklaşımlarından yararlanıyoruz.
+            </p>
             <Link href="/iletisim" className="btn btn--primary">
               Bize Ulaşın <IconArrow />
             </Link>

@@ -8,7 +8,6 @@ export const metadata: Metadata = {
 };
 
 const ITEMS = [
-  { caption: 'Freya Psikoloji — karşılama alanı', src: '/galeri/galeri-01.avif', tall: true },
   { caption: 'Seans odası', src: '/galeri/galeri-02.avif' },
   { caption: 'Oyun terapisi atölyesi', src: '/galeri/galeri-03.avif' },
   { caption: 'Grup terapisi çemberi', src: '/galeri/galeri-04.avif' },
@@ -17,11 +16,6 @@ const ITEMS = [
   { caption: 'Merkezimizden detaylar', src: '/galeri/galeri-07.avif' },
   { caption: 'Göktürk ofisimiz', src: '/galeri/galeri-08.avif' },
   { caption: 'Terapi odası', src: '/galeri/galeri-09.avif' },
-  { caption: 'Danışmanlık alanı', src: '/galeri/galeri-10.avif' },
-  { caption: 'Çalışma ortamımız', src: '/galeri/galeri-11.avif', tall: true },
-  { caption: 'Oyun terapisi köşesi', src: '/galeri/galeri-12.avif' },
-  { caption: 'Grup çalışması', src: '/galeri/galeri-13.avif' },
-  { caption: 'Merkezimizden', src: '/galeri/galeri-14.avif' },
   { caption: 'Freya Psikoloji', src: '/galeri/galeri-15.avif' },
   { caption: 'Freya Psikoloji — merkezimizden', src: '/galeri/galeri-16.avif' },
   { caption: 'Çalışma alanımız', src: '/galeri/galeri-17.avif', tall: true },
@@ -33,6 +27,11 @@ const ITEMS = [
   { caption: 'Çalışma ortamı', src: '/galeri/galeri-23.avif' },
   { caption: 'Merkezimiz', src: '/galeri/galeri-24.avif' },
   { caption: 'Freya Psikoloji', src: '/galeri/galeri-25.avif' },
+  { caption: 'Freya Psikoloji — merkezimizden', src: '/galeri/galeri-26.avif', tall: true },
+  { caption: 'Çalışma alanımızdan', src: '/galeri/galeri-27.avif' },
+  { caption: 'Merkezimizden kareler', src: '/galeri/galeri-28.avif', tall: true },
+  { caption: 'Terapi ortamımız', src: '/galeri/galeri-29.avif' },
+  { caption: 'Freya Psikoloji ofisimiz', src: '/galeri/galeri-30.avif' },
 ];
 
 export default function GaleriPage() {
