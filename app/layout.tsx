@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { Playfair_Display, Manrope } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
@@ -67,6 +68,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <main>{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <GoogleAnalytics gaId="G-W7PGOMRYFK" />
       </body>
     </html>
   );
